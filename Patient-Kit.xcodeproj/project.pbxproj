@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9100507F20AA0D9B008AB1DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100507E20AA0D9B008AB1DC /* AppDelegate.swift */; };
-		9100508120AA0D9B008AB1DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100508020AA0D9B008AB1DC /* ViewController.swift */; };
-		9100508420AA0D9B008AB1DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9100508220AA0D9B008AB1DC /* Main.storyboard */; };
 		9100508720AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9100508520AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld */; };
 		9100508920AA0D9B008AB1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9100508820AA0D9B008AB1DC /* Assets.xcassets */; };
-		9100508C20AA0D9B008AB1DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9100508A20AA0D9B008AB1DC /* LaunchScreen.storyboard */; };
 		9100509720AA0D9B008AB1DC /* Patient_KitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100509620AA0D9B008AB1DC /* Patient_KitTests.swift */; };
+		910050A420AA0ED2008AB1DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910050A320AA0ED2008AB1DC /* Main.storyboard */; };
+		910050A620AA0EE5008AB1DC /* Launcher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910050A520AA0EE5008AB1DC /* Launcher.storyboard */; };
+		910050A920AA0F3C008AB1DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050A820AA0F3C008AB1DC /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,15 +29,15 @@
 /* Begin PBXFileReference section */
 		9100507B20AA0D9B008AB1DC /* Patient-Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patient-Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9100507E20AA0D9B008AB1DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9100508020AA0D9B008AB1DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9100508320AA0D9B008AB1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9100508620AA0D9B008AB1DC /* Patient_Kit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Patient_Kit.xcdatamodel; sourceTree = "<group>"; };
 		9100508820AA0D9B008AB1DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9100508B20AA0D9B008AB1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9100508D20AA0D9B008AB1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9100509220AA0D9B008AB1DC /* Patient-KitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Patient-KitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9100509620AA0D9B008AB1DC /* Patient_KitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient_KitTests.swift; sourceTree = "<group>"; };
 		9100509820AA0D9B008AB1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		910050A320AA0ED2008AB1DC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		910050A520AA0EE5008AB1DC /* Launcher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launcher.storyboard; sourceTree = "<group>"; };
+		910050A820AA0F3C008AB1DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +79,12 @@
 		9100507D20AA0D9B008AB1DC /* Patient-Kit */ = {
 			isa = PBXGroup;
 			children = (
+				910050AA20AA0F69008AB1DC /* Storage */,
+				910050A220AA0EAB008AB1DC /* Controller */,
+				910050A120AA0EA2008AB1DC /* Storyboard */,
 				9100507E20AA0D9B008AB1DC /* AppDelegate.swift */,
-				9100508020AA0D9B008AB1DC /* ViewController.swift */,
-				9100508220AA0D9B008AB1DC /* Main.storyboard */,
 				9100508820AA0D9B008AB1DC /* Assets.xcassets */,
-				9100508A20AA0D9B008AB1DC /* LaunchScreen.storyboard */,
 				9100508D20AA0D9B008AB1DC /* Info.plist */,
-				9100508520AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld */,
 			);
 			path = "Patient-Kit";
 			sourceTree = "<group>";
@@ -97,6 +96,39 @@
 				9100509820AA0D9B008AB1DC /* Info.plist */,
 			);
 			path = "Patient-KitTests";
+			sourceTree = "<group>";
+		};
+		910050A120AA0EA2008AB1DC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				910050A320AA0ED2008AB1DC /* Main.storyboard */,
+				910050A520AA0EE5008AB1DC /* Launcher.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		910050A220AA0EAB008AB1DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				910050A720AA0F24008AB1DC /* Login */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		910050A720AA0F24008AB1DC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				910050A820AA0F3C008AB1DC /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		910050AA20AA0F69008AB1DC /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				9100508520AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +214,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9100508C20AA0D9B008AB1DC /* LaunchScreen.storyboard in Resources */,
+				910050A620AA0EE5008AB1DC /* Launcher.storyboard in Resources */,
 				9100508920AA0D9B008AB1DC /* Assets.xcassets in Resources */,
-				9100508420AA0D9B008AB1DC /* Main.storyboard in Resources */,
+				910050A420AA0ED2008AB1DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,8 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910050A920AA0F3C008AB1DC /* LoginViewController.swift in Sources */,
 				9100508720AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld in Sources */,
-				9100508120AA0D9B008AB1DC /* ViewController.swift in Sources */,
 				9100507F20AA0D9B008AB1DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,25 +257,6 @@
 			targetProxy = 9100509320AA0D9B008AB1DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9100508220AA0D9B008AB1DC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9100508320AA0D9B008AB1DC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9100508A20AA0D9B008AB1DC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9100508B20AA0D9B008AB1DC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9100509920AA0D9B008AB1DC /* Debug */ = {
@@ -360,11 +373,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5F6DV8X9;
 				INFOPLIST_FILE = "Patient-Kit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "upc.edu.pe.Patient-Kit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -375,11 +389,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5F6DV8X9;
 				INFOPLIST_FILE = "Patient-Kit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "upc.edu.pe.Patient-Kit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
