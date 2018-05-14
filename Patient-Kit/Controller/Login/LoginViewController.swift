@@ -34,9 +34,14 @@ class LoginViewController: UIViewController {
                              andEndPoint: CGPoint(x: 1, y: 0.5))
     signInButton.layer.cornerRadius = signInButton.bounds.height / 2
     signInButton.clipsToBounds = true
+    
+    self.navigationController?.setNavigationBarHidden(true, animated: animated)
   }
   
-  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    self.navigationController?.setNavigationBarHidden(false, animated: animated)
+  }
   
 
 

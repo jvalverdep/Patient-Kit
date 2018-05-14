@@ -16,6 +16,7 @@
 		910050A920AA0F3C008AB1DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050A820AA0F3C008AB1DC /* LoginViewController.swift */; };
 		910050AE20AA143C008AB1DC /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050AD20AA143C008AB1DC /* Gradient.swift */; };
 		910050B120AA1610008AB1DC /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050B020AA1610008AB1DC /* AppColor.swift */; };
+		910050B320AA1A50008AB1DC /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		910050A820AA0F3C008AB1DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		910050AD20AA143C008AB1DC /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		910050B020AA1610008AB1DC /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				910050A820AA0F3C008AB1DC /* LoginViewController.swift */,
+				910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910050B320AA1A50008AB1DC /* CreateAccountViewController.swift in Sources */,
 				910050A920AA0F3C008AB1DC /* LoginViewController.swift in Sources */,
 				910050B120AA1610008AB1DC /* AppColor.swift in Sources */,
 				9100508720AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld in Sources */,
