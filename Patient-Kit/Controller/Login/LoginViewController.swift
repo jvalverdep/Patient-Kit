@@ -10,17 +10,34 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+  
+  @IBOutlet weak var signInButton: UIButton!
+  
+  
+  
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+      
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
     
+    Gradient.applyGradientTo(View: signInButton,
+                             withColors: [AppColor.darkPurple.cgColor, AppColor.lightPurple.cgColor],
+                             withStartPoint: CGPoint(x: 0.0, y: 0.5),
+                             andEndPoint: CGPoint(x: 1, y: 0.5))
+    signInButton.layer.cornerRadius = signInButton.bounds.height / 2
+    signInButton.clipsToBounds = true
+  }
+  
+  
+  
 
 
 }

@@ -11,9 +11,11 @@
 		9100508720AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9100508520AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld */; };
 		9100508920AA0D9B008AB1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9100508820AA0D9B008AB1DC /* Assets.xcassets */; };
 		9100509720AA0D9B008AB1DC /* Patient_KitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100509620AA0D9B008AB1DC /* Patient_KitTests.swift */; };
-		910050A420AA0ED2008AB1DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910050A320AA0ED2008AB1DC /* Main.storyboard */; };
+		910050A420AA0ED2008AB1DC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910050A320AA0ED2008AB1DC /* Login.storyboard */; };
 		910050A620AA0EE5008AB1DC /* Launcher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910050A520AA0EE5008AB1DC /* Launcher.storyboard */; };
 		910050A920AA0F3C008AB1DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050A820AA0F3C008AB1DC /* LoginViewController.swift */; };
+		910050AE20AA143C008AB1DC /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050AD20AA143C008AB1DC /* Gradient.swift */; };
+		910050B120AA1610008AB1DC /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050B020AA1610008AB1DC /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +37,11 @@
 		9100509220AA0D9B008AB1DC /* Patient-KitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Patient-KitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9100509620AA0D9B008AB1DC /* Patient_KitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient_KitTests.swift; sourceTree = "<group>"; };
 		9100509820AA0D9B008AB1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		910050A320AA0ED2008AB1DC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		910050A320AA0ED2008AB1DC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		910050A520AA0EE5008AB1DC /* Launcher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launcher.storyboard; sourceTree = "<group>"; };
 		910050A820AA0F3C008AB1DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		910050AD20AA143C008AB1DC /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		910050B020AA1610008AB1DC /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		9100507D20AA0D9B008AB1DC /* Patient-Kit */ = {
 			isa = PBXGroup;
 			children = (
+				910050AC20AA1423008AB1DC /* Util */,
 				910050AA20AA0F69008AB1DC /* Storage */,
 				910050A220AA0EAB008AB1DC /* Controller */,
 				910050A120AA0EA2008AB1DC /* Storyboard */,
@@ -101,7 +106,7 @@
 		910050A120AA0EA2008AB1DC /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				910050A320AA0ED2008AB1DC /* Main.storyboard */,
+				910050A320AA0ED2008AB1DC /* Login.storyboard */,
 				910050A520AA0EE5008AB1DC /* Launcher.storyboard */,
 			);
 			path = Storyboard;
@@ -129,6 +134,15 @@
 				9100508520AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		910050AC20AA1423008AB1DC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				910050AD20AA143C008AB1DC /* Gradient.swift */,
+				910050B020AA1610008AB1DC /* AppColor.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +230,7 @@
 			files = (
 				910050A620AA0EE5008AB1DC /* Launcher.storyboard in Resources */,
 				9100508920AA0D9B008AB1DC /* Assets.xcassets in Resources */,
-				910050A420AA0ED2008AB1DC /* Main.storyboard in Resources */,
+				910050A420AA0ED2008AB1DC /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,8 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				910050A920AA0F3C008AB1DC /* LoginViewController.swift in Sources */,
+				910050B120AA1610008AB1DC /* AppColor.swift in Sources */,
 				9100508720AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld in Sources */,
 				9100507F20AA0D9B008AB1DC /* AppDelegate.swift in Sources */,
+				910050AE20AA143C008AB1DC /* Gradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
