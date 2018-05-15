@@ -85,6 +85,9 @@
                                                 <state key="normal" title="SIGN IN">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signInAction:" destination="bna-hO-i79" eventType="touchUpInside" id="Cg5-yi-RJf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xZ-vX-9VY">
                                                 <rect key="frame" x="20.5" y="432" width="335" height="30"/>
@@ -138,7 +141,7 @@
                     <navigationItem key="navigationItem" id="mYm-g6-vB9"/>
                     <connections>
                         <outlet property="signInButton" destination="Vtx-J0-jSo" id="U6G-SO-z8J"/>
-                        <segue destination="6aM-u0-YBf" kind="show" id="tIQ-dE-NC8"/>
+                        <segue destination="6aM-u0-YBf" kind="show" identifier="goToMain" id="tIQ-dE-NC8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eC4-I9-NKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -251,7 +254,7 @@
         <!--Main-->
         <scene sceneID="KGZ-PC-ilZ">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="6aM-u0-YBf" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="goToMain" storyboardName="Main" id="6aM-u0-YBf" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7VZ-oW-Wdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="854" y="274"/>

@@ -42,7 +42,24 @@ class LoginViewController: UIViewController {
     super.viewWillDisappear(animated)
     self.navigationController?.setNavigationBarHidden(false, animated: animated)
   }
+    
+    
+    override func performSegue(withIdentifier identifier: String, sender: Any?) {
+        if identifier == "goToMain"{
+            if let goToMainRef = storyboard?.instantiateViewController(withIdentifier: "goToMain"){
+                self.present(goToMainRef, animated: false, completion: nil)
+            }
+        }
+    }
   
+    
+    @IBAction func signInAction(_ sender: Any) {
+        //TODO: Validation
+        
+        performSegue(withIdentifier: "goToMain", sender: nil)
+        
+    }
+    
 
 
 }

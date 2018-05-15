@@ -18,7 +18,7 @@ class Gradient{
     gradientLayer.colors = colors
     gradientLayer.startPoint = startPoint
     gradientLayer.endPoint = endPoint
-    gradientLayer.locations = [0.8]
+    gradientLayer.locations = [0.6]
     view.layer.addSublayer(gradientLayer)
   }
   
