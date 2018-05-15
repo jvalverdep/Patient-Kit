@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pJG-VZ-FqM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pJG-VZ-FqM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -138,11 +138,12 @@
                     <navigationItem key="navigationItem" id="mYm-g6-vB9"/>
                     <connections>
                         <outlet property="signInButton" destination="Vtx-J0-jSo" id="U6G-SO-z8J"/>
+                        <segue destination="6aM-u0-YBf" kind="show" id="tIQ-dE-NC8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eC4-I9-NKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96.799999999999997" y="80.50974512743629"/>
+            <point key="canvasLocation" x="-46" y="81"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="Mzr-z8-Y9l">
@@ -245,7 +246,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8X-7u-RHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1008.8" y="-247.82608695652175"/>
+            <point key="canvasLocation" x="1058" y="-229"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="KGZ-PC-ilZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="6aM-u0-YBf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7VZ-oW-Wdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="274"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cIO-05-ff8">
