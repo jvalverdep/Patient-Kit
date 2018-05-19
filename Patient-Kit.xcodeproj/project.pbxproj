@@ -20,6 +20,14 @@
 		910050AE20AA143C008AB1DC /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050AD20AA143C008AB1DC /* Gradient.swift */; };
 		910050B120AA1610008AB1DC /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050B020AA1610008AB1DC /* AppColor.swift */; };
 		910050B320AA1A50008AB1DC /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */; };
+		F4193BA220B06B88003DA391 /* AvailableAppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4193BA120B06B88003DA391 /* AvailableAppointmentsViewController.swift */; };
+		F4193BA420B06BEA003DA391 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4193BA320B06BEA003DA391 /* Settings.storyboard */; };
+		F4E613BC20B06541005A738F /* PatientAlerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E613BB20B06541005A738F /* PatientAlerts.storyboard */; };
+		F4E613BE20B065DB005A738F /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E613BD20B065DB005A738F /* Notification.storyboard */; };
+		F4E613C220B06648005A738F /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C120B06648005A738F /* AlertsViewController.swift */; };
+		F4E613C520B0667A005A738F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C420B0667A005A738F /* Alert.swift */; };
+		F4E613C720B06689005A738F /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C620B06689005A738F /* Notification.swift */; };
+		F4E613C920B06A04005A738F /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C820B06A04005A738F /* NotificationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +58,14 @@
 		910050AD20AA143C008AB1DC /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		910050B020AA1610008AB1DC /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		F4193BA120B06B88003DA391 /* AvailableAppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableAppointmentsViewController.swift; sourceTree = "<group>"; };
+		F4193BA320B06BEA003DA391 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F4E613BB20B06541005A738F /* PatientAlerts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientAlerts.storyboard; sourceTree = "<group>"; };
+		F4E613BD20B065DB005A738F /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		F4E613C120B06648005A738F /* AlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
+		F4E613C420B0667A005A738F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		F4E613C620B06689005A738F /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		F4E613C820B06A04005A738F /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				7FCE373820AB318F00C6C64F /* MakeAppointmentMenuTableViewController.swift */,
+				F4193BA120B06B88003DA391 /* AvailableAppointmentsViewController.swift */,
 			);
 			path = MakeAppointment;
 			sourceTree = "<group>";
@@ -99,6 +116,7 @@
 		9100507D20AA0D9B008AB1DC /* Patient-Kit */ = {
 			isa = PBXGroup;
 			children = (
+				F4E613C320B0666C005A738F /* Model */,
 				910050AC20AA1423008AB1DC /* Util */,
 				910050AA20AA0F69008AB1DC /* Storage */,
 				910050A220AA0EAB008AB1DC /* Controller */,
@@ -126,6 +144,9 @@
 				910050A520AA0EE5008AB1DC /* Launcher.storyboard */,
 				7FCE371320AB242E00C6C64F /* Main.storyboard */,
 				7FCE373620AB308200C6C64F /* MakeAppointment.storyboard */,
+				F4E613BB20B06541005A738F /* PatientAlerts.storyboard */,
+				F4E613BD20B065DB005A738F /* Notification.storyboard */,
+				F4193BA320B06BEA003DA391 /* Settings.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -133,6 +154,8 @@
 		910050A220AA0EAB008AB1DC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F4E613C020B06627005A738F /* Alerts */,
+				F4E613BF20B06620005A738F /* Notifications */,
 				7FCE373520AB2D3500C6C64F /* MakeAppointment */,
 				910050A720AA0F24008AB1DC /* Login */,
 			);
@@ -163,6 +186,31 @@
 				910050B020AA1610008AB1DC /* AppColor.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		F4E613BF20B06620005A738F /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				F4E613C820B06A04005A738F /* NotificationsViewController.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		F4E613C020B06627005A738F /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				F4E613C120B06648005A738F /* AlertsViewController.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		F4E613C320B0666C005A738F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4E613C420B0667A005A738F /* Alert.swift */,
+				F4E613C620B06689005A738F /* Notification.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +299,11 @@
 				910050A620AA0EE5008AB1DC /* Launcher.storyboard in Resources */,
 				9100508920AA0D9B008AB1DC /* Assets.xcassets in Resources */,
 				7FCE373720AB308200C6C64F /* MakeAppointment.storyboard in Resources */,
+				F4193BA420B06BEA003DA391 /* Settings.storyboard in Resources */,
 				910050A420AA0ED2008AB1DC /* Login.storyboard in Resources */,
 				7FCE371420AB242E00C6C64F /* Main.storyboard in Resources */,
+				F4E613BC20B06541005A738F /* PatientAlerts.storyboard in Resources */,
+				F4E613BE20B065DB005A738F /* Notification.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,13 +321,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E613C520B0667A005A738F /* Alert.swift in Sources */,
 				910050B320AA1A50008AB1DC /* CreateAccountViewController.swift in Sources */,
 				910050A920AA0F3C008AB1DC /* LoginViewController.swift in Sources */,
 				7FCE373920AB318F00C6C64F /* MakeAppointmentMenuTableViewController.swift in Sources */,
 				910050B120AA1610008AB1DC /* AppColor.swift in Sources */,
 				9100508720AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld in Sources */,
+				F4E613C720B06689005A738F /* Notification.swift in Sources */,
 				9100507F20AA0D9B008AB1DC /* AppDelegate.swift in Sources */,
+				F4E613C920B06A04005A738F /* NotificationsViewController.swift in Sources */,
 				910050AE20AA143C008AB1DC /* Gradient.swift in Sources */,
+				F4193BA220B06B88003DA391 /* AvailableAppointmentsViewController.swift in Sources */,
+				F4E613C220B06648005A738F /* AlertsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

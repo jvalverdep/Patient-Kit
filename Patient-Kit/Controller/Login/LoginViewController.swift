@@ -18,7 +18,13 @@ class LoginViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+			
+			Gradient.applyGradientTo(View: signInButton,
+															 withColors: [AppColor.darkPurple.cgColor, AppColor.lightPurple.cgColor],
+															 withStartPoint: CGPoint(x: 0.0, y: 0.5),
+															 andEndPoint: CGPoint(x: 1, y: 0.5))
+			signInButton.layer.cornerRadius = signInButton.bounds.height / 2
+			signInButton.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,14 +33,7 @@ class LoginViewController: UIViewController {
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    
-    Gradient.applyGradientTo(View: signInButton,
-                             withColors: [AppColor.darkPurple.cgColor, AppColor.lightPurple.cgColor],
-                             withStartPoint: CGPoint(x: 0.0, y: 0.5),
-                             andEndPoint: CGPoint(x: 1, y: 0.5))
-    signInButton.layer.cornerRadius = signInButton.bounds.height / 2
-    signInButton.clipsToBounds = true
-    
+		
     self.navigationController?.setNavigationBarHidden(true, animated: animated)
   }
   
