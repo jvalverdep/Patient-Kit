@@ -21,28 +21,20 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Pw-Oh-clq">
                                 <rect key="frame" x="16" y="299" width="288" height="205"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="NYy-SB-Yr6" id="Ru2-Rx-FnF"/>
+                                    <outlet property="delegate" destination="NYy-SB-Yr6" id="g9Q-hV-pKM"/>
+                                </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qa6-OU-T8s">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qa6-OU-T8s" customClass="CVCalendarView" customModule="CVCalendar">
                                 <rect key="frame" x="16" y="76" width="288" height="207"/>
-                                <color key="backgroundColor" white="0.85511532738095231" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="207" id="cgp-dD-xXW"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfV-ix-KbC">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfV-ix-KbC" customClass="CVCalendarMenuView" customModule="CVCalendar">
                                 <rect key="frame" x="16" y="20" width="288" height="40"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lO-Wc-ee3">
-                                        <rect key="frame" x="116.5" y="9.5" width="55" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.93812313988095219" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="1lO-Wc-ee3" firstAttribute="centerX" secondItem="mfV-ix-KbC" secondAttribute="centerX" id="Oc4-oU-Ch2"/>
-                                    <constraint firstItem="1lO-Wc-ee3" firstAttribute="centerY" secondItem="mfV-ix-KbC" secondAttribute="centerY" id="Yt6-jx-lhI"/>
                                     <constraint firstAttribute="height" constant="40" id="kfd-Yn-HBP"/>
                                 </constraints>
                             </view>
@@ -64,6 +56,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Appointments" id="T5i-gI-Xmk"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="calendarView" destination="qa6-OU-T8s" id="1Qi-Lz-mTg"/>
+                        <outlet property="menuView" destination="mfV-ix-KbC" id="NQL-MB-Gaf"/>
+                        <outlet property="tableView" destination="5Pw-Oh-clq" id="9Lb-0T-uDF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EOl-79-jKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

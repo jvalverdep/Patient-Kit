@@ -20,8 +20,12 @@
 		910050AE20AA143C008AB1DC /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050AD20AA143C008AB1DC /* Gradient.swift */; };
 		910050B120AA1610008AB1DC /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050B020AA1610008AB1DC /* AppColor.swift */; };
 		910050B320AA1A50008AB1DC /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */; };
+		BBD6E869C13934536A587AA0 /* Pods_Patient_KitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310623BFCD93044DD7B51DD0 /* Pods_Patient_KitTests.framework */; };
+		E78C827E319AC5B8387F1DE4 /* Pods_Patient_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E387123E72EB9286CE2A3D /* Pods_Patient_Kit.framework */; };
 		F4193BA220B06B88003DA391 /* AvailableAppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4193BA120B06B88003DA391 /* AvailableAppointmentsViewController.swift */; };
 		F4193BA420B06BEA003DA391 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4193BA320B06BEA003DA391 /* Settings.storyboard */; };
+		F430372720B071E4002967B3 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F430372520B071E4002967B3 /* ScheduleTableViewCell.swift */; };
+		F430372820B071E4002967B3 /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F430372620B071E4002967B3 /* ScheduleTableViewCell.xib */; };
 		F4E613BC20B06541005A738F /* PatientAlerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E613BB20B06541005A738F /* PatientAlerts.storyboard */; };
 		F4E613BE20B065DB005A738F /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E613BD20B065DB005A738F /* Notification.storyboard */; };
 		F4E613C220B06648005A738F /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C120B06648005A738F /* AlertsViewController.swift */; };
@@ -41,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		273F01815FEBCBE45A845E7A /* Pods-Patient-KitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-KitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-KitTests/Pods-Patient-KitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		310623BFCD93044DD7B51DD0 /* Pods_Patient_KitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Patient_KitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E387123E72EB9286CE2A3D /* Pods_Patient_Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Patient_Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E29735FC44A780B8C81D095 /* Pods-Patient-Kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-Kit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit.release.xcconfig"; sourceTree = "<group>"; };
+		7BA3A894077B7B62A6BDF547 /* Pods-Patient-KitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-KitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-KitTests/Pods-Patient-KitTests.release.xcconfig"; sourceTree = "<group>"; };
 		7FCE371320AB242E00C6C64F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7FCE373620AB308200C6C64F /* MakeAppointment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakeAppointment.storyboard; sourceTree = "<group>"; };
 		7FCE373820AB318F00C6C64F /* MakeAppointmentMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAppointmentMenuTableViewController.swift; sourceTree = "<group>"; };
@@ -60,12 +69,15 @@
 		910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		F4193BA120B06B88003DA391 /* AvailableAppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableAppointmentsViewController.swift; sourceTree = "<group>"; };
 		F4193BA320B06BEA003DA391 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F430372520B071E4002967B3 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		F430372620B071E4002967B3 /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		F4E613BB20B06541005A738F /* PatientAlerts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientAlerts.storyboard; sourceTree = "<group>"; };
 		F4E613BD20B065DB005A738F /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		F4E613C120B06648005A738F /* AlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
 		F4E613C420B0667A005A738F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		F4E613C620B06689005A738F /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		F4E613C820B06A04005A738F /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		FCDC8AF28C21F104A29A3A57 /* Pods-Patient-Kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-Kit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78C827E319AC5B8387F1DE4 /* Pods_Patient_Kit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBD6E869C13934536A587AA0 /* Pods_Patient_KitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +115,8 @@
 				9100507D20AA0D9B008AB1DC /* Patient-Kit */,
 				9100509520AA0D9B008AB1DC /* Patient-KitTests */,
 				9100507C20AA0D9B008AB1DC /* Products */,
+				C688AAA3C3580BF0BCBAD356 /* Pods */,
+				DE899F19300B93256D7664B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +132,7 @@
 		9100507D20AA0D9B008AB1DC /* Patient-Kit */ = {
 			isa = PBXGroup;
 			children = (
+				F430372320B071B6002967B3 /* View */,
 				F4E613C320B0666C005A738F /* Model */,
 				910050AC20AA1423008AB1DC /* Util */,
 				910050AA20AA0F69008AB1DC /* Storage */,
@@ -188,6 +205,43 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		C688AAA3C3580BF0BCBAD356 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCDC8AF28C21F104A29A3A57 /* Pods-Patient-Kit.debug.xcconfig */,
+				6E29735FC44A780B8C81D095 /* Pods-Patient-Kit.release.xcconfig */,
+				273F01815FEBCBE45A845E7A /* Pods-Patient-KitTests.debug.xcconfig */,
+				7BA3A894077B7B62A6BDF547 /* Pods-Patient-KitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE899F19300B93256D7664B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35E387123E72EB9286CE2A3D /* Pods_Patient_Kit.framework */,
+				310623BFCD93044DD7B51DD0 /* Pods_Patient_KitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F430372320B071B6002967B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F430372420B071BC002967B3 /* ScheduleTableCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F430372420B071BC002967B3 /* ScheduleTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				F430372520B071E4002967B3 /* ScheduleTableViewCell.swift */,
+				F430372620B071E4002967B3 /* ScheduleTableViewCell.xib */,
+			);
+			path = ScheduleTableCell;
+			sourceTree = "<group>";
+		};
 		F4E613BF20B06620005A738F /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,9 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9100509B20AA0D9B008AB1DC /* Build configuration list for PBXNativeTarget "Patient-Kit" */;
 			buildPhases = (
+				734135BE4EFE710E598FD47F /* [CP] Check Pods Manifest.lock */,
 				9100507720AA0D9B008AB1DC /* Sources */,
 				9100507820AA0D9B008AB1DC /* Frameworks */,
 				9100507920AA0D9B008AB1DC /* Resources */,
+				B156B5016506B7B53EEEFCD8 /* [CP] Embed Pods Frameworks */,
+				923170F3DD63472F9C0D5F41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,9 +294,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9100509E20AA0D9B008AB1DC /* Build configuration list for PBXNativeTarget "Patient-KitTests" */;
 			buildPhases = (
+				A1F197A167074525EE0BD931 /* [CP] Check Pods Manifest.lock */,
 				9100508E20AA0D9B008AB1DC /* Sources */,
 				9100508F20AA0D9B008AB1DC /* Frameworks */,
 				9100509020AA0D9B008AB1DC /* Resources */,
+				C2AE3062989F14464E4C4616 /* [CP] Embed Pods Frameworks */,
+				E9585BB9756A0820DC816951 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,6 +363,7 @@
 				910050A420AA0ED2008AB1DC /* Login.storyboard in Resources */,
 				7FCE371420AB242E00C6C64F /* Main.storyboard in Resources */,
 				F4E613BC20B06541005A738F /* PatientAlerts.storyboard in Resources */,
+				F430372820B071E4002967B3 /* ScheduleTableViewCell.xib in Resources */,
 				F4E613BE20B065DB005A738F /* Notification.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,12 +377,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		734135BE4EFE710E598FD47F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Patient-Kit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		923170F3DD63472F9C0D5F41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1F197A167074525EE0BD931 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Patient-KitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B156B5016506B7B53EEEFCD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CVCalendar/CVCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CVCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2AE3062989F14464E4C4616 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Patient-KitTests/Pods-Patient-KitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9585BB9756A0820DC816951 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Patient-KitTests/Pods-Patient-KitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9100507720AA0D9B008AB1DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F4E613C520B0667A005A738F /* Alert.swift in Sources */,
+				F430372720B071E4002967B3 /* ScheduleTableViewCell.swift in Sources */,
 				910050B320AA1A50008AB1DC /* CreateAccountViewController.swift in Sources */,
 				910050A920AA0F3C008AB1DC /* LoginViewController.swift in Sources */,
 				7FCE373920AB318F00C6C64F /* MakeAppointmentMenuTableViewController.swift in Sources */,
@@ -464,6 +628,7 @@
 		};
 		9100509C20AA0D9B008AB1DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCDC8AF28C21F104A29A3A57 /* Pods-Patient-Kit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,6 +645,7 @@
 		};
 		9100509D20AA0D9B008AB1DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E29735FC44A780B8C81D095 /* Pods-Patient-Kit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -496,6 +662,7 @@
 		};
 		9100509F20AA0D9B008AB1DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 273F01815FEBCBE45A845E7A /* Pods-Patient-KitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +680,7 @@
 		};
 		910050A020AA0D9B008AB1DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA3A894077B7B62A6BDF547 /* Pods-Patient-KitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

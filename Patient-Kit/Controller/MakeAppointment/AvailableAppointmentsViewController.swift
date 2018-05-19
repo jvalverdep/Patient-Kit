@@ -7,13 +7,24 @@
 //
 
 import UIKit
+import CVCalendar
 
 class AvailableAppointmentsViewController: UIViewController {
 
-    override func viewDidLoad() {
+	@IBOutlet weak var menuView: CVCalendarMenuView!
+	@IBOutlet weak var calendarView: CVCalendarView!
+	
+	@IBOutlet weak var tableView: UITableView!
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        menuView.delegate = self
+		calendarView.delegate = self
+		
+		tableView.register(UINib(nibName: "ScheduleTableViewCell", bundle: nil)
+			, forCellReuseIdentifier: "scheduleCell")
+		
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +33,13 @@ class AvailableAppointmentsViewController: UIViewController {
     }
     
 
+	override func viewDidLayoutSubviews() {
+		super.viewDidLayoutSubviews()
+		
+		menuView.commitMenuViewUpdate()
+		calendarView.commitCalendarViewUpdate()
+	}
+	
     /*
     // MARK: - Navigation
 
@@ -33,3 +51,52 @@ class AvailableAppointmentsViewController: UIViewController {
     */
 
 }
+
+extension AvailableAppointmentsViewController: UITableViewDataSource{
+	
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+		return 5
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+		
+		let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell") as! ScheduleTableViewCell
+		
+		
+		return cell
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+extension AvailableAppointmentsViewController: CVCalendarViewDelegate{
+	func presentationMode() -> CalendarMode {
+		return CalendarMode.monthView
+	}
+	
+	func firstWeekday() -> Weekday {
+		return Weekday.saturday
+	}
+	
+	
+	
+}
+
+extension AvailableAppointmentsViewController: CVCalendarMenuViewDelegate{
+	
+	
+}
+
+
+
+
+
+
+
+
