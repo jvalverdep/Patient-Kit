@@ -143,6 +143,7 @@
 			children = (
 				F4DCC07C20B3BC52006259CC /* MyAppointmentsViewController.swift */,
 				F4DCC0B220B3DAD9006259CC /* AppointmentDetailViewController.swift */,
+				F4DCC0B420B43FE3006259CC /* CreateAppointmentViewController.swift */,
 			);
 			path = ManageAppointment;
 			sourceTree = "<group>";
@@ -170,7 +171,6 @@
 		9100507D20AA0D9B008AB1DC /* Patient-Kit */ = {
 			isa = PBXGroup;
 			children = (
-				F4DCC0AF20B3CCB8006259CC /* Extension */,
 				F4DCC08320B3BF82006259CC /* Resources */,
 				F430372320B071B6002967B3 /* View */,
 				F4E613C320B0666C005A738F /* Model */,
@@ -218,8 +218,8 @@
 		910050A720AA0F24008AB1DC /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				910050A820AA0F3C008AB1DC /* LoginViewController.swift */,
 				910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */,
+				910050A820AA0F3C008AB1DC /* LoginViewController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -284,7 +284,6 @@
 			children = (
 				F4DCC07F20B3BDA4006259CC /* AppointmentTableViewCell.swift */,
 				F4DCC08020B3BDA4006259CC /* AppointmentTableViewCell.xib */,
-				F4DCC0B420B43FE3006259CC /* CreateAppointmentViewController.swift */,
 			);
 			path = AppointmentTableCell;
 			sourceTree = "<group>";
@@ -329,13 +328,6 @@
 				F4DCC09920B3BFAA006259CC /* Poppins-MediumItalic.ttf */,
 			);
 			path = Poppins;
-			sourceTree = "<group>";
-		};
-		F4DCC0AF20B3CCB8006259CC /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		F4E613C320B0666C005A738F /* Model */ = {

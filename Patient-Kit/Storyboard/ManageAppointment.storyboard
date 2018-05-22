@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JvS-fl-obV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JvS-fl-obV">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Poppins-Bold.ttf">
             <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
         </array>
         <array key="Poppins-Regular.ttf">
             <string>Poppins-Regular</string>
@@ -73,33 +76,52 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yux-MN-acD" customClass="CVCalendarMenuView" customModule="CVCalendar">
                                 <rect key="frame" x="20" y="84" width="280" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="V6s-Gp-Tr2"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZo-J6-2Ia" customClass="CVCalendarView" customModule="CVCalendar">
-                                <rect key="frame" x="20" y="134" width="280" height="150"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="20" y="124" width="280" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="0lW-Xf-b7l"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No appointments left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76t-yZ-mtd">
+                                <rect key="frame" x="86" y="386.5" width="148.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s0x-qn-VtF">
+                                <rect key="frame" x="20" y="284" width="280" height="225"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="reS-jh-8Pu" id="UQQ-lR-zWv"/>
+                                    <outlet property="delegate" destination="reS-jh-8Pu" id="W54-oR-Dv2"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="0CJ-Lq-nBH" firstAttribute="trailing" secondItem="s0x-qn-VtF" secondAttribute="trailing" constant="20" id="24R-YI-Akx"/>
                             <constraint firstItem="0CJ-Lq-nBH" firstAttribute="trailing" secondItem="Yux-MN-acD" secondAttribute="trailing" constant="20" id="2kG-WR-7EY"/>
                             <constraint firstItem="lZo-J6-2Ia" firstAttribute="leading" secondItem="0CJ-Lq-nBH" secondAttribute="leading" constant="20" id="4u1-BX-ajU"/>
-                            <constraint firstItem="lZo-J6-2Ia" firstAttribute="top" secondItem="Yux-MN-acD" secondAttribute="bottom" constant="10" id="GEr-H4-mfo"/>
+                            <constraint firstItem="76t-yZ-mtd" firstAttribute="centerX" secondItem="s0x-qn-VtF" secondAttribute="centerX" id="9Kg-FG-djB"/>
+                            <constraint firstItem="lZo-J6-2Ia" firstAttribute="top" secondItem="Yux-MN-acD" secondAttribute="bottom" id="GEr-H4-mfo"/>
+                            <constraint firstItem="76t-yZ-mtd" firstAttribute="centerY" secondItem="s0x-qn-VtF" secondAttribute="centerY" id="GwX-Ey-hc1"/>
+                            <constraint firstItem="0CJ-Lq-nBH" firstAttribute="bottom" secondItem="s0x-qn-VtF" secondAttribute="bottom" constant="10" id="QnY-mC-mtC"/>
+                            <constraint firstItem="s0x-qn-VtF" firstAttribute="leading" secondItem="0CJ-Lq-nBH" secondAttribute="leading" constant="20" id="Qtl-mg-GNk"/>
                             <constraint firstItem="Yux-MN-acD" firstAttribute="top" secondItem="0CJ-Lq-nBH" secondAttribute="top" constant="20" id="jBG-gL-eoo"/>
                             <constraint firstItem="0CJ-Lq-nBH" firstAttribute="trailing" secondItem="lZo-J6-2Ia" secondAttribute="trailing" constant="20" id="nsK-J8-TXX"/>
+                            <constraint firstItem="s0x-qn-VtF" firstAttribute="top" secondItem="lZo-J6-2Ia" secondAttribute="bottom" constant="10" id="ucc-yg-Aot"/>
                             <constraint firstItem="Yux-MN-acD" firstAttribute="leading" secondItem="0CJ-Lq-nBH" secondAttribute="leading" constant="20" id="wm8-37-EAf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0CJ-Lq-nBH"/>
                     </view>
                     <connections>
-                        <outlet property="calendarView" destination="lZo-J6-2Ia" id="Lu2-jl-s79"/>
-                        <outlet property="menuView" destination="Yux-MN-acD" id="wec-kg-01t"/>
+                        <outlet property="availableAppointmentsTableView" destination="s0x-qn-VtF" id="Rhp-xu-AZB"/>
+                        <outlet property="calendarView" destination="lZo-J6-2Ia" id="QiB-Fh-foG"/>
+                        <outlet property="menuView" destination="Yux-MN-acD" id="MON-Qe-uch"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6C-Ra-sro" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -173,8 +195,8 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June, 01, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDn-5h-lhB">
-                                                        <rect key="frame" x="64" y="20.5" width="111" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="64" y="18" width="106" height="24"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
