@@ -21,8 +21,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="Oh6-B5-TM1" kind="relationship" relationship="viewControllers" id="61i-8j-s5O"/>
-                        <segue destination="xjB-tv-rcQ" kind="relationship" relationship="viewControllers" id="Nz3-4h-plG"/>
-                        <segue destination="GXU-gg-rzi" kind="relationship" relationship="viewControllers" id="bOD-pm-Me2"/>
                         <segue destination="3HT-Ii-wZo" kind="relationship" relationship="viewControllers" id="R1U-59-0LP"/>
                     </connections>
                 </tabBarController>
@@ -30,25 +28,15 @@
             </objects>
             <point key="canvasLocation" x="-300" y="-99"/>
         </scene>
-        <!--MakeAppointment-->
+        <!--ManageAppointment-->
         <scene sceneID="4tD-h6-Uny">
             <objects>
-                <viewControllerPlaceholder storyboardName="MakeAppointment" id="Oh6-B5-TM1" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ManageAppointment" id="Oh6-B5-TM1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Appointments" id="6r8-8q-qfA"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qje-gx-TN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-766" y="345"/>
-        </scene>
-        <!--PatientAlerts-->
-        <scene sceneID="PsA-4M-nBe">
-            <objects>
-                <viewControllerPlaceholder storyboardName="PatientAlerts" id="xjB-tv-rcQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="pmn-5O-r4Z"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K3K-5Z-kdH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-326" y="381"/>
         </scene>
         <!--Settings-->
         <scene sceneID="wIX-h5-RWZ">
@@ -59,16 +47,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKl-8q-Maq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="236" y="368"/>
-        </scene>
-        <!--Notification-->
-        <scene sceneID="k0f-kt-fi0">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Notification" id="GXU-gg-rzi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Lxh-eq-cDU"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hwj-Wq-2JA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4" y="381"/>
         </scene>
     </scenes>
 </document>

@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7FCE371420AB242E00C6C64F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCE371320AB242E00C6C64F /* Main.storyboard */; };
-		7FCE373720AB308200C6C64F /* MakeAppointment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCE373620AB308200C6C64F /* MakeAppointment.storyboard */; };
+		7FCE373720AB308200C6C64F /* ManageAppointment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCE373620AB308200C6C64F /* ManageAppointment.storyboard */; };
 		7FCE373920AB318F00C6C64F /* MakeAppointmentMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCE373820AB318F00C6C64F /* MakeAppointmentMenuTableViewController.swift */; };
 		9100507F20AA0D9B008AB1DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100507E20AA0D9B008AB1DC /* AppDelegate.swift */; };
 		9100508720AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9100508520AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld */; };
 		9100508920AA0D9B008AB1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9100508820AA0D9B008AB1DC /* Assets.xcassets */; };
 		9100509720AA0D9B008AB1DC /* Patient_KitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100509620AA0D9B008AB1DC /* Patient_KitTests.swift */; };
-		910050A420AA0ED2008AB1DC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910050A320AA0ED2008AB1DC /* Login.storyboard */; };
+		910050A420AA0ED2008AB1DC /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910050A320AA0ED2008AB1DC /* Authentication.storyboard */; };
 		910050A620AA0EE5008AB1DC /* Launcher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910050A520AA0EE5008AB1DC /* Launcher.storyboard */; };
 		910050A920AA0F3C008AB1DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050A820AA0F3C008AB1DC /* LoginViewController.swift */; };
 		910050AE20AA143C008AB1DC /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050AD20AA143C008AB1DC /* Gradient.swift */; };
@@ -26,12 +26,8 @@
 		F4193BA420B06BEA003DA391 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4193BA320B06BEA003DA391 /* Settings.storyboard */; };
 		F430372720B071E4002967B3 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F430372520B071E4002967B3 /* ScheduleTableViewCell.swift */; };
 		F430372820B071E4002967B3 /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F430372620B071E4002967B3 /* ScheduleTableViewCell.xib */; };
-		F4E613BC20B06541005A738F /* PatientAlerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E613BB20B06541005A738F /* PatientAlerts.storyboard */; };
-		F4E613BE20B065DB005A738F /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E613BD20B065DB005A738F /* Notification.storyboard */; };
-		F4E613C220B06648005A738F /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C120B06648005A738F /* AlertsViewController.swift */; };
 		F4E613C520B0667A005A738F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C420B0667A005A738F /* Alert.swift */; };
 		F4E613C720B06689005A738F /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C620B06689005A738F /* Notification.swift */; };
-		F4E613C920B06A04005A738F /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C820B06A04005A738F /* NotificationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +47,7 @@
 		6E29735FC44A780B8C81D095 /* Pods-Patient-Kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-Kit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit.release.xcconfig"; sourceTree = "<group>"; };
 		7BA3A894077B7B62A6BDF547 /* Pods-Patient-KitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-KitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-KitTests/Pods-Patient-KitTests.release.xcconfig"; sourceTree = "<group>"; };
 		7FCE371320AB242E00C6C64F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		7FCE373620AB308200C6C64F /* MakeAppointment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakeAppointment.storyboard; sourceTree = "<group>"; };
+		7FCE373620AB308200C6C64F /* ManageAppointment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManageAppointment.storyboard; sourceTree = "<group>"; };
 		7FCE373820AB318F00C6C64F /* MakeAppointmentMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAppointmentMenuTableViewController.swift; sourceTree = "<group>"; };
 		9100507B20AA0D9B008AB1DC /* Patient-Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patient-Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9100507E20AA0D9B008AB1DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +57,7 @@
 		9100509220AA0D9B008AB1DC /* Patient-KitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Patient-KitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9100509620AA0D9B008AB1DC /* Patient_KitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient_KitTests.swift; sourceTree = "<group>"; };
 		9100509820AA0D9B008AB1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		910050A320AA0ED2008AB1DC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		910050A320AA0ED2008AB1DC /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		910050A520AA0EE5008AB1DC /* Launcher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launcher.storyboard; sourceTree = "<group>"; };
 		910050A820AA0F3C008AB1DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		910050AD20AA143C008AB1DC /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
@@ -71,12 +67,8 @@
 		F4193BA320B06BEA003DA391 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		F430372520B071E4002967B3 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		F430372620B071E4002967B3 /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
-		F4E613BB20B06541005A738F /* PatientAlerts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientAlerts.storyboard; sourceTree = "<group>"; };
-		F4E613BD20B065DB005A738F /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
-		F4E613C120B06648005A738F /* AlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
 		F4E613C420B0667A005A738F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		F4E613C620B06689005A738F /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
-		F4E613C820B06A04005A738F /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		FCDC8AF28C21F104A29A3A57 /* Pods-Patient-Kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-Kit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,13 +92,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7FCE373520AB2D3500C6C64F /* MakeAppointment */ = {
+		7FCE373520AB2D3500C6C64F /* ManageAppointment */ = {
 			isa = PBXGroup;
 			children = (
 				7FCE373820AB318F00C6C64F /* MakeAppointmentMenuTableViewController.swift */,
 				F4193BA120B06B88003DA391 /* AvailableAppointmentsViewController.swift */,
 			);
-			path = MakeAppointment;
+			path = ManageAppointment;
 			sourceTree = "<group>";
 		};
 		9100507220AA0D9B008AB1DC = {
@@ -157,12 +149,10 @@
 		910050A120AA0EA2008AB1DC /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				910050A320AA0ED2008AB1DC /* Login.storyboard */,
+				910050A320AA0ED2008AB1DC /* Authentication.storyboard */,
 				910050A520AA0EE5008AB1DC /* Launcher.storyboard */,
 				7FCE371320AB242E00C6C64F /* Main.storyboard */,
-				7FCE373620AB308200C6C64F /* MakeAppointment.storyboard */,
-				F4E613BB20B06541005A738F /* PatientAlerts.storyboard */,
-				F4E613BD20B065DB005A738F /* Notification.storyboard */,
+				7FCE373620AB308200C6C64F /* ManageAppointment.storyboard */,
 				F4193BA320B06BEA003DA391 /* Settings.storyboard */,
 			);
 			path = Storyboard;
@@ -171,21 +161,19 @@
 		910050A220AA0EAB008AB1DC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F4E613C020B06627005A738F /* Alerts */,
-				F4E613BF20B06620005A738F /* Notifications */,
-				7FCE373520AB2D3500C6C64F /* MakeAppointment */,
-				910050A720AA0F24008AB1DC /* Login */,
+				7FCE373520AB2D3500C6C64F /* ManageAppointment */,
+				910050A720AA0F24008AB1DC /* Authentication */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		910050A720AA0F24008AB1DC /* Login */ = {
+		910050A720AA0F24008AB1DC /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				910050A820AA0F3C008AB1DC /* LoginViewController.swift */,
 				910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */,
 			);
-			path = Login;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		910050AA20AA0F69008AB1DC /* Storage */ = {
@@ -240,22 +228,6 @@
 				F430372620B071E4002967B3 /* ScheduleTableViewCell.xib */,
 			);
 			path = ScheduleTableCell;
-			sourceTree = "<group>";
-		};
-		F4E613BF20B06620005A738F /* Notifications */ = {
-			isa = PBXGroup;
-			children = (
-				F4E613C820B06A04005A738F /* NotificationsViewController.swift */,
-			);
-			path = Notifications;
-			sourceTree = "<group>";
-		};
-		F4E613C020B06627005A738F /* Alerts */ = {
-			isa = PBXGroup;
-			children = (
-				F4E613C120B06648005A738F /* AlertsViewController.swift */,
-			);
-			path = Alerts;
 			sourceTree = "<group>";
 		};
 		F4E613C320B0666C005A738F /* Model */ = {
@@ -358,13 +330,11 @@
 			files = (
 				910050A620AA0EE5008AB1DC /* Launcher.storyboard in Resources */,
 				9100508920AA0D9B008AB1DC /* Assets.xcassets in Resources */,
-				7FCE373720AB308200C6C64F /* MakeAppointment.storyboard in Resources */,
+				7FCE373720AB308200C6C64F /* ManageAppointment.storyboard in Resources */,
 				F4193BA420B06BEA003DA391 /* Settings.storyboard in Resources */,
-				910050A420AA0ED2008AB1DC /* Login.storyboard in Resources */,
+				910050A420AA0ED2008AB1DC /* Authentication.storyboard in Resources */,
 				7FCE371420AB242E00C6C64F /* Main.storyboard in Resources */,
-				F4E613BC20B06541005A738F /* PatientAlerts.storyboard in Resources */,
 				F430372820B071E4002967B3 /* ScheduleTableViewCell.xib in Resources */,
-				F4E613BE20B065DB005A738F /* Notification.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,10 +463,8 @@
 				9100508720AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld in Sources */,
 				F4E613C720B06689005A738F /* Notification.swift in Sources */,
 				9100507F20AA0D9B008AB1DC /* AppDelegate.swift in Sources */,
-				F4E613C920B06A04005A738F /* NotificationsViewController.swift in Sources */,
 				910050AE20AA143C008AB1DC /* Gradient.swift in Sources */,
 				F4193BA220B06B88003DA391 /* AvailableAppointmentsViewController.swift in Sources */,
-				F4E613C220B06648005A738F /* AlertsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

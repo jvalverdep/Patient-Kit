@@ -17,18 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_splash" translatesAutoresizingMaskIntoConstraints="NO" id="P3j-74-puv">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="P3j-74-puv" secondAttribute="bottom" id="3m3-GS-XP7"/>
-                            <constraint firstItem="P3j-74-puv" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="7Rk-wS-mql"/>
-                            <constraint firstItem="P3j-74-puv" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" id="bP2-AR-Vsj"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="P3j-74-puv" secondAttribute="trailing" id="sRc-dB-X4e"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                     </view>
                 </viewController>
@@ -37,7 +26,4 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="img_splash" width="598" height="652"/>
-    </resources>
 </document>
