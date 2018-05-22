@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7FCE371420AB242E00C6C64F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCE371320AB242E00C6C64F /* Main.storyboard */; };
 		7FCE373720AB308200C6C64F /* ManageAppointment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCE373620AB308200C6C64F /* ManageAppointment.storyboard */; };
-		7FCE373920AB318F00C6C64F /* MakeAppointmentMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCE373820AB318F00C6C64F /* MakeAppointmentMenuTableViewController.swift */; };
 		9100507F20AA0D9B008AB1DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100507E20AA0D9B008AB1DC /* AppDelegate.swift */; };
 		9100508720AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9100508520AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld */; };
 		9100508920AA0D9B008AB1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9100508820AA0D9B008AB1DC /* Assets.xcassets */; };
@@ -22,10 +21,32 @@
 		910050B320AA1A50008AB1DC /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */; };
 		BBD6E869C13934536A587AA0 /* Pods_Patient_KitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310623BFCD93044DD7B51DD0 /* Pods_Patient_KitTests.framework */; };
 		E78C827E319AC5B8387F1DE4 /* Pods_Patient_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E387123E72EB9286CE2A3D /* Pods_Patient_Kit.framework */; };
-		F4193BA220B06B88003DA391 /* AvailableAppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4193BA120B06B88003DA391 /* AvailableAppointmentsViewController.swift */; };
 		F4193BA420B06BEA003DA391 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4193BA320B06BEA003DA391 /* Settings.storyboard */; };
 		F430372720B071E4002967B3 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F430372520B071E4002967B3 /* ScheduleTableViewCell.swift */; };
 		F430372820B071E4002967B3 /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F430372620B071E4002967B3 /* ScheduleTableViewCell.xib */; };
+		F4DCC07D20B3BC52006259CC /* MyAppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCC07C20B3BC52006259CC /* MyAppointmentsViewController.swift */; };
+		F4DCC08120B3BDA4006259CC /* AppointmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCC07F20B3BDA4006259CC /* AppointmentTableViewCell.swift */; };
+		F4DCC08220B3BDA4006259CC /* AppointmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08020B3BDA4006259CC /* AppointmentTableViewCell.xib */; };
+		F4DCC09A20B3BFAA006259CC /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08720B3BFA9006259CC /* Poppins-ExtraLight.ttf */; };
+		F4DCC09B20B3BFAA006259CC /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08820B3BFA9006259CC /* Poppins-ThinItalic.ttf */; };
+		F4DCC09C20B3BFAA006259CC /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08920B3BFAA006259CC /* Poppins-ExtraLightItalic.ttf */; };
+		F4DCC09D20B3BFAA006259CC /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08A20B3BFAA006259CC /* Poppins-BoldItalic.ttf */; };
+		F4DCC09E20B3BFAA006259CC /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08B20B3BFAA006259CC /* Poppins-Light.ttf */; };
+		F4DCC09F20B3BFAA006259CC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08C20B3BFAA006259CC /* Poppins-Medium.ttf */; };
+		F4DCC0A020B3BFAA006259CC /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08D20B3BFAA006259CC /* Poppins-SemiBoldItalic.ttf */; };
+		F4DCC0A120B3BFAA006259CC /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08E20B3BFAA006259CC /* Poppins-ExtraBoldItalic.ttf */; };
+		F4DCC0A220B3BFAA006259CC /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08F20B3BFAA006259CC /* Poppins-ExtraBold.ttf */; };
+		F4DCC0A320B3BFAA006259CC /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09020B3BFAA006259CC /* Poppins-BlackItalic.ttf */; };
+		F4DCC0A420B3BFAA006259CC /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09120B3BFAA006259CC /* OFL.txt */; };
+		F4DCC0A520B3BFAA006259CC /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09220B3BFAA006259CC /* Poppins-Regular.ttf */; };
+		F4DCC0A620B3BFAA006259CC /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09320B3BFAA006259CC /* Poppins-LightItalic.ttf */; };
+		F4DCC0A720B3BFAA006259CC /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09420B3BFAA006259CC /* Poppins-Bold.ttf */; };
+		F4DCC0A820B3BFAA006259CC /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09520B3BFAA006259CC /* Poppins-Black.ttf */; };
+		F4DCC0A920B3BFAA006259CC /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09620B3BFAA006259CC /* Poppins-Thin.ttf */; };
+		F4DCC0AA20B3BFAA006259CC /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09720B3BFAA006259CC /* Poppins-SemiBold.ttf */; };
+		F4DCC0AB20B3BFAA006259CC /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09820B3BFAA006259CC /* Poppins-Italic.ttf */; };
+		F4DCC0AC20B3BFAA006259CC /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09920B3BFAA006259CC /* Poppins-MediumItalic.ttf */; };
+		F4DCC0AE20B3C362006259CC /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCC0AD20B3C362006259CC /* Appointment.swift */; };
 		F4E613C520B0667A005A738F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C420B0667A005A738F /* Alert.swift */; };
 		F4E613C720B06689005A738F /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C620B06689005A738F /* Notification.swift */; };
 /* End PBXBuildFile section */
@@ -48,7 +69,6 @@
 		7BA3A894077B7B62A6BDF547 /* Pods-Patient-KitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-KitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-KitTests/Pods-Patient-KitTests.release.xcconfig"; sourceTree = "<group>"; };
 		7FCE371320AB242E00C6C64F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7FCE373620AB308200C6C64F /* ManageAppointment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManageAppointment.storyboard; sourceTree = "<group>"; };
-		7FCE373820AB318F00C6C64F /* MakeAppointmentMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAppointmentMenuTableViewController.swift; sourceTree = "<group>"; };
 		9100507B20AA0D9B008AB1DC /* Patient-Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patient-Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9100507E20AA0D9B008AB1DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9100508620AA0D9B008AB1DC /* Patient_Kit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Patient_Kit.xcdatamodel; sourceTree = "<group>"; };
@@ -63,10 +83,32 @@
 		910050AD20AA143C008AB1DC /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		910050B020AA1610008AB1DC /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
-		F4193BA120B06B88003DA391 /* AvailableAppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableAppointmentsViewController.swift; sourceTree = "<group>"; };
 		F4193BA320B06BEA003DA391 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		F430372520B071E4002967B3 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		F430372620B071E4002967B3 /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		F4DCC07C20B3BC52006259CC /* MyAppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsViewController.swift; sourceTree = "<group>"; };
+		F4DCC07F20B3BDA4006259CC /* AppointmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTableViewCell.swift; sourceTree = "<group>"; };
+		F4DCC08020B3BDA4006259CC /* AppointmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointmentTableViewCell.xib; sourceTree = "<group>"; };
+		F4DCC08720B3BFA9006259CC /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F4DCC08820B3BFA9006259CC /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC08920B3BFAA006259CC /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC08A20B3BFAA006259CC /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC08B20B3BFAA006259CC /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		F4DCC08C20B3BFAA006259CC /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		F4DCC08D20B3BFAA006259CC /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC08E20B3BFAA006259CC /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC08F20B3BFAA006259CC /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F4DCC09020B3BFAA006259CC /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC09120B3BFAA006259CC /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		F4DCC09220B3BFAA006259CC /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		F4DCC09320B3BFAA006259CC /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC09420B3BFAA006259CC /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		F4DCC09520B3BFAA006259CC /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		F4DCC09620B3BFAA006259CC /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		F4DCC09720B3BFAA006259CC /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		F4DCC09820B3BFAA006259CC /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		F4DCC09920B3BFAA006259CC /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC0AD20B3C362006259CC /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		F4E613C420B0667A005A738F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		F4E613C620B06689005A738F /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		FCDC8AF28C21F104A29A3A57 /* Pods-Patient-Kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-Kit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,8 +137,7 @@
 		7FCE373520AB2D3500C6C64F /* ManageAppointment */ = {
 			isa = PBXGroup;
 			children = (
-				7FCE373820AB318F00C6C64F /* MakeAppointmentMenuTableViewController.swift */,
-				F4193BA120B06B88003DA391 /* AvailableAppointmentsViewController.swift */,
+				F4DCC07C20B3BC52006259CC /* MyAppointmentsViewController.swift */,
 			);
 			path = ManageAppointment;
 			sourceTree = "<group>";
@@ -124,6 +165,8 @@
 		9100507D20AA0D9B008AB1DC /* Patient-Kit */ = {
 			isa = PBXGroup;
 			children = (
+				F4DCC0AF20B3CCB8006259CC /* Extension */,
+				F4DCC08320B3BF82006259CC /* Resources */,
 				F430372320B071B6002967B3 /* View */,
 				F4E613C320B0666C005A738F /* Model */,
 				910050AC20AA1423008AB1DC /* Util */,
@@ -216,6 +259,7 @@
 		F430372320B071B6002967B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F4DCC07E20B3BD76006259CC /* AppointmentTableCell */,
 				F430372420B071BC002967B3 /* ScheduleTableCell */,
 			);
 			path = View;
@@ -230,11 +274,70 @@
 			path = ScheduleTableCell;
 			sourceTree = "<group>";
 		};
+		F4DCC07E20B3BD76006259CC /* AppointmentTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCC07F20B3BDA4006259CC /* AppointmentTableViewCell.swift */,
+				F4DCC08020B3BDA4006259CC /* AppointmentTableViewCell.xib */,
+			);
+			path = AppointmentTableCell;
+			sourceTree = "<group>";
+		};
+		F4DCC08320B3BF82006259CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCC08420B3BF89006259CC /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4DCC08420B3BF89006259CC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCC08620B3BFA9006259CC /* Poppins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F4DCC08620B3BFA9006259CC /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCC08720B3BFA9006259CC /* Poppins-ExtraLight.ttf */,
+				F4DCC08820B3BFA9006259CC /* Poppins-ThinItalic.ttf */,
+				F4DCC08920B3BFAA006259CC /* Poppins-ExtraLightItalic.ttf */,
+				F4DCC08A20B3BFAA006259CC /* Poppins-BoldItalic.ttf */,
+				F4DCC08B20B3BFAA006259CC /* Poppins-Light.ttf */,
+				F4DCC08C20B3BFAA006259CC /* Poppins-Medium.ttf */,
+				F4DCC08D20B3BFAA006259CC /* Poppins-SemiBoldItalic.ttf */,
+				F4DCC08E20B3BFAA006259CC /* Poppins-ExtraBoldItalic.ttf */,
+				F4DCC08F20B3BFAA006259CC /* Poppins-ExtraBold.ttf */,
+				F4DCC09020B3BFAA006259CC /* Poppins-BlackItalic.ttf */,
+				F4DCC09120B3BFAA006259CC /* OFL.txt */,
+				F4DCC09220B3BFAA006259CC /* Poppins-Regular.ttf */,
+				F4DCC09320B3BFAA006259CC /* Poppins-LightItalic.ttf */,
+				F4DCC09420B3BFAA006259CC /* Poppins-Bold.ttf */,
+				F4DCC09520B3BFAA006259CC /* Poppins-Black.ttf */,
+				F4DCC09620B3BFAA006259CC /* Poppins-Thin.ttf */,
+				F4DCC09720B3BFAA006259CC /* Poppins-SemiBold.ttf */,
+				F4DCC09820B3BFAA006259CC /* Poppins-Italic.ttf */,
+				F4DCC09920B3BFAA006259CC /* Poppins-MediumItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		F4DCC0AF20B3CCB8006259CC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F4E613C320B0666C005A738F /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				F4E613C420B0667A005A738F /* Alert.swift */,
 				F4E613C620B06689005A738F /* Notification.swift */,
+				F4DCC0AD20B3C362006259CC /* Appointment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,12 +432,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				910050A620AA0EE5008AB1DC /* Launcher.storyboard in Resources */,
+				F4DCC09F20B3BFAA006259CC /* Poppins-Medium.ttf in Resources */,
+				F4DCC09E20B3BFAA006259CC /* Poppins-Light.ttf in Resources */,
 				9100508920AA0D9B008AB1DC /* Assets.xcassets in Resources */,
+				F4DCC0A820B3BFAA006259CC /* Poppins-Black.ttf in Resources */,
 				7FCE373720AB308200C6C64F /* ManageAppointment.storyboard in Resources */,
+				F4DCC0A020B3BFAA006259CC /* Poppins-SemiBoldItalic.ttf in Resources */,
+				F4DCC0AC20B3BFAA006259CC /* Poppins-MediumItalic.ttf in Resources */,
+				F4DCC09D20B3BFAA006259CC /* Poppins-BoldItalic.ttf in Resources */,
+				F4DCC0A720B3BFAA006259CC /* Poppins-Bold.ttf in Resources */,
+				F4DCC09A20B3BFAA006259CC /* Poppins-ExtraLight.ttf in Resources */,
+				F4DCC0A120B3BFAA006259CC /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				F4DCC0A420B3BFAA006259CC /* OFL.txt in Resources */,
 				F4193BA420B06BEA003DA391 /* Settings.storyboard in Resources */,
 				910050A420AA0ED2008AB1DC /* Authentication.storyboard in Resources */,
+				F4DCC09C20B3BFAA006259CC /* Poppins-ExtraLightItalic.ttf in Resources */,
 				7FCE371420AB242E00C6C64F /* Main.storyboard in Resources */,
+				F4DCC09B20B3BFAA006259CC /* Poppins-ThinItalic.ttf in Resources */,
+				F4DCC0A220B3BFAA006259CC /* Poppins-ExtraBold.ttf in Resources */,
+				F4DCC0A620B3BFAA006259CC /* Poppins-LightItalic.ttf in Resources */,
 				F430372820B071E4002967B3 /* ScheduleTableViewCell.xib in Resources */,
+				F4DCC0AB20B3BFAA006259CC /* Poppins-Italic.ttf in Resources */,
+				F4DCC0AA20B3BFAA006259CC /* Poppins-SemiBold.ttf in Resources */,
+				F4DCC0A320B3BFAA006259CC /* Poppins-BlackItalic.ttf in Resources */,
+				F4DCC0A920B3BFAA006259CC /* Poppins-Thin.ttf in Resources */,
+				F4DCC08220B3BDA4006259CC /* AppointmentTableViewCell.xib in Resources */,
+				F4DCC0A520B3BFAA006259CC /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,15 +579,16 @@
 			files = (
 				F4E613C520B0667A005A738F /* Alert.swift in Sources */,
 				F430372720B071E4002967B3 /* ScheduleTableViewCell.swift in Sources */,
+				F4DCC07D20B3BC52006259CC /* MyAppointmentsViewController.swift in Sources */,
+				F4DCC0AE20B3C362006259CC /* Appointment.swift in Sources */,
 				910050B320AA1A50008AB1DC /* CreateAccountViewController.swift in Sources */,
 				910050A920AA0F3C008AB1DC /* LoginViewController.swift in Sources */,
-				7FCE373920AB318F00C6C64F /* MakeAppointmentMenuTableViewController.swift in Sources */,
 				910050B120AA1610008AB1DC /* AppColor.swift in Sources */,
 				9100508720AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld in Sources */,
 				F4E613C720B06689005A738F /* Notification.swift in Sources */,
 				9100507F20AA0D9B008AB1DC /* AppDelegate.swift in Sources */,
 				910050AE20AA143C008AB1DC /* Gradient.swift in Sources */,
-				F4193BA220B06B88003DA391 /* AvailableAppointmentsViewController.swift in Sources */,
+				F4DCC08120B3BDA4006259CC /* AppointmentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

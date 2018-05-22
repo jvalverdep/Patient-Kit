@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="loy-Of-DhB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JvS-fl-obV">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,88 +10,84 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Appointments-->
-        <scene sceneID="eS2-ny-V7Y">
-            <objects>
-                <viewController id="NYy-SB-Yr6" customClass="AvailableAppointmentsViewController" customModule="Patient_Kit" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fUT-KW-abd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Pw-Oh-clq">
-                                <rect key="frame" x="16" y="299" width="288" height="205"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="NYy-SB-Yr6" id="Ru2-Rx-FnF"/>
-                                    <outlet property="delegate" destination="NYy-SB-Yr6" id="g9Q-hV-pKM"/>
-                                </connections>
-                            </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qa6-OU-T8s" customClass="CVCalendarView" customModule="CVCalendar">
-                                <rect key="frame" x="16" y="76" width="288" height="207"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="207" id="cgp-dD-xXW"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfV-ix-KbC" customClass="CVCalendarMenuView" customModule="CVCalendar">
-                                <rect key="frame" x="16" y="20" width="288" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="kfd-Yn-HBP"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="5Pw-Oh-clq" firstAttribute="top" secondItem="qa6-OU-T8s" secondAttribute="bottom" constant="16" id="SCk-WE-T3F"/>
-                            <constraint firstItem="mfV-ix-KbC" firstAttribute="leading" secondItem="HFg-Js-hK2" secondAttribute="leading" constant="16" id="TCW-uU-emz"/>
-                            <constraint firstItem="HFg-Js-hK2" firstAttribute="trailing" secondItem="5Pw-Oh-clq" secondAttribute="trailing" constant="16" id="WRn-sl-BSu"/>
-                            <constraint firstItem="qa6-OU-T8s" firstAttribute="leading" secondItem="HFg-Js-hK2" secondAttribute="leading" constant="16" id="aly-sH-qpw"/>
-                            <constraint firstItem="HFg-Js-hK2" firstAttribute="bottom" secondItem="5Pw-Oh-clq" secondAttribute="bottom" constant="15" id="fS5-q4-Tcr"/>
-                            <constraint firstItem="HFg-Js-hK2" firstAttribute="trailing" secondItem="mfV-ix-KbC" secondAttribute="trailing" constant="16" id="iV4-md-6RX"/>
-                            <constraint firstItem="5Pw-Oh-clq" firstAttribute="leading" secondItem="HFg-Js-hK2" secondAttribute="leading" constant="16" id="n8W-hK-20r"/>
-                            <constraint firstItem="mfV-ix-KbC" firstAttribute="top" secondItem="HFg-Js-hK2" secondAttribute="top" id="o4d-0g-oH6"/>
-                            <constraint firstItem="HFg-Js-hK2" firstAttribute="trailing" secondItem="qa6-OU-T8s" secondAttribute="trailing" constant="16" id="o5K-QE-FbW"/>
-                            <constraint firstItem="qa6-OU-T8s" firstAttribute="top" secondItem="mfV-ix-KbC" secondAttribute="bottom" constant="16" id="wbX-rG-uHl"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="HFg-Js-hK2"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Appointments" id="T5i-gI-Xmk"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="calendarView" destination="qa6-OU-T8s" id="1Qi-Lz-mTg"/>
-                        <outlet property="menuView" destination="mfV-ix-KbC" id="NQL-MB-Gaf"/>
-                        <outlet property="tableView" destination="5Pw-Oh-clq" id="9Lb-0T-uDF"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EOl-79-jKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1699" y="-146"/>
-        </scene>
-        <!--View Controller-->
+        <!--My Appointments View Controller-->
         <scene sceneID="ybn-Nh-SRc">
             <objects>
-                <viewController id="loy-Of-DhB" sceneMemberID="viewController">
+                <viewController id="loy-Of-DhB" customClass="MyAppointmentsViewController" customModule="Patient_Kit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LAz-wM-Y3t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ei6-dI-HbC">
-                                <rect key="frame" x="20" y="40" width="280" height="508"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BFr-Ar-0yp">
+                                <rect key="frame" x="20" y="84" width="280" height="415"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="loy-Of-DhB" id="eeI-PN-jWQ"/>
+                                    <outlet property="delegate" destination="loy-Of-DhB" id="p9C-KW-J9j"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ei6-dI-HbC" firstAttribute="leading" secondItem="iaI-bP-Zxz" secondAttribute="leading" constant="20" id="LPU-Tj-bca"/>
-                            <constraint firstItem="iaI-bP-Zxz" firstAttribute="bottom" secondItem="ei6-dI-HbC" secondAttribute="bottom" constant="20" id="Pch-4u-OYT"/>
-                            <constraint firstItem="ei6-dI-HbC" firstAttribute="top" secondItem="iaI-bP-Zxz" secondAttribute="top" constant="20" id="X9T-mj-s0s"/>
-                            <constraint firstItem="iaI-bP-Zxz" firstAttribute="trailing" secondItem="ei6-dI-HbC" secondAttribute="trailing" constant="20" id="hiT-NP-otu"/>
+                            <constraint firstItem="BFr-Ar-0yp" firstAttribute="top" secondItem="iaI-bP-Zxz" secondAttribute="top" constant="20" id="Dok-lF-rft"/>
+                            <constraint firstItem="iaI-bP-Zxz" firstAttribute="bottom" secondItem="BFr-Ar-0yp" secondAttribute="bottom" constant="20" id="MM6-6l-okd"/>
+                            <constraint firstItem="iaI-bP-Zxz" firstAttribute="trailing" secondItem="BFr-Ar-0yp" secondAttribute="trailing" constant="20" id="Myk-gB-aq5"/>
+                            <constraint firstItem="BFr-Ar-0yp" firstAttribute="leading" secondItem="iaI-bP-Zxz" secondAttribute="leading" constant="20" id="lbw-Zg-DQ5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iaI-bP-Zxz"/>
                     </view>
+                    <navigationItem key="navigationItem" id="N9c-Sc-QfE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6ep-QS-y6u">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addApointmentAction:" destination="loy-Of-DhB" id="0zw-SK-tf8"/>
+                                <segue destination="reS-jh-8Pu" kind="show" id="otA-49-3mH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="appointmentsTableView" destination="BFr-Ar-0yp" id="6jA-z0-OTD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiX-CC-gSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="-146"/>
+            <point key="canvasLocation" x="1123.125" y="-146.83098591549296"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jrf-iY-vBL">
+            <objects>
+                <viewController id="reS-jh-8Pu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T0h-G6-m8p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0CJ-Lq-nBH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6C-Ra-sro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2094" y="-451"/>
+        </scene>
+        <!--Appointments-->
+        <scene sceneID="L8M-sq-fKF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JvS-fl-obV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Appointments" id="lht-T2-Kex"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qn4-dl-eff">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="loy-Of-DhB" kind="relationship" relationship="rootViewController" id="k0b-tH-7gi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4N-iW-alB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="-147"/>
         </scene>
     </scenes>
 </document>
