@@ -20,7 +20,7 @@ class MyAppointmentsViewController: UIViewController {
 
         appointmentsTableView.register(UINib(nibName: "AppointmentTableViewCell", bundle: nil), forCellReuseIdentifier: "AppointmentTableViewCell")
 			
-			
+			self.navigationController?.navigationBar.tintColor = UIColor.white;
 			
     }
 
@@ -46,6 +46,16 @@ class MyAppointmentsViewController: UIViewController {
 	}
 	
 	
+	override func performSegue(withIdentifier identifier: String, sender: Any?) {
+		if identifier == "goToDetail"{
+			if let appointmentDetailVC = storyboard?.instantiateViewController(withIdentifier: "appointment_detail") as? AppointmentDetailViewController{
+
+				self.navigationController?.pushViewController(appointmentDetailVC, animated: true)
+			}
+		}
+	}
+	
+	
 }
 
 
@@ -55,6 +65,14 @@ extension MyAppointmentsViewController: UITableViewDelegate{
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
 		return 100
 	}
+	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+		
+		performSegue(withIdentifier: "goToDetail", sender: nil)
+		
+		
+	}
+	
 }
 
 

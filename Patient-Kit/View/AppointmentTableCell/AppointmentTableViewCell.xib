@@ -68,7 +68,7 @@
                             </stackView>
                         </subviews>
                     </stackView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_doctor_profile" translatesAutoresizingMaskIntoConstraints="NO" id="jb6-OB-a70">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jb6-OB-a70">
                         <rect key="frame" x="351" y="21.5" width="40" height="40"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -101,7 +101,4 @@
             <point key="canvasLocation" x="141.5" y="73"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="img_doctor_profile" width="112" height="112"/>
-    </resources>
 </document>
