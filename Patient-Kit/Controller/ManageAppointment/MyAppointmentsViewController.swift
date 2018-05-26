@@ -21,6 +21,7 @@ class MyAppointmentsViewController: UIViewController {
 
       appointmentsTableView.register(UINib(nibName: "AppointmentTableViewCell", bundle: nil), forCellReuseIdentifier: "AppointmentTableViewCell")
 			self.navigationController?.navigationBar.tintColor = UIColor.white;
+			appointmentsTableView.separatorStyle = .none
 			getAppointments()
     }
 
@@ -99,7 +100,7 @@ extension MyAppointmentsViewController: UITableViewDataSource{
 		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "AppointmentTableViewCell") as! AppointmentTableViewCell
 		
-		
+		cell.selectionStyle = .none
 		cell.setDataWith(appointment: appointments[indexPath.section])
 		
 		return cell

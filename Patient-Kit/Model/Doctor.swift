@@ -15,6 +15,7 @@ class Doctor{
 	
 	init(id: Int) {
 		self.id = id
+		
 	}
 	
 	

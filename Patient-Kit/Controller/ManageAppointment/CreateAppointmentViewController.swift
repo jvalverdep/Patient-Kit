@@ -27,6 +27,8 @@ class CreateAppointmentViewController: UIViewController {
         
         availableAppointmentsTableView.register(UINib(nibName: "ScheduleTableViewCell", bundle: nil)
             , forCellReuseIdentifier: "scheduleCell")
+			
+			availableAppointmentsTableView.separatorStyle = .none
     }
 
     override func didReceiveMemoryWarning() {
@@ -98,6 +100,9 @@ extension CreateAppointmentViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell") as! ScheduleTableViewCell
+			
+			cell.selectionStyle = .none
+			
         return cell
     }
     

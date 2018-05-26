@@ -81,6 +81,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="scheduleDoctorHoursLabel" destination="dvc-Bo-2E9" id="xmX-tV-zPm"/>
+                <outlet property="scheduleDoctorNameLabel" destination="8uV-2L-5Co" id="d23-2r-moq"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>

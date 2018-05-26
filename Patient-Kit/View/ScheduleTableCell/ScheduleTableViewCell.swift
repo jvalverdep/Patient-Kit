@@ -10,6 +10,11 @@ import UIKit
 
 class ScheduleTableViewCell: UITableViewCell {
 
+	@IBOutlet weak var scheduleDoctorNameLabel: UILabel!
+	@IBOutlet weak var scheduleDoctorHoursLabel: UILabel!
+	
+	
+	
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +25,13 @@ class ScheduleTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+	
+	
+	
+	func create(WithDoctor: Doctor){
+		scheduleDoctorNameLabel.text = "Dr. Jose Barrientos"
+		scheduleDoctorHoursLabel.text = "11:00 - 13:00 Hrs"
+	}
+	
     
 }
