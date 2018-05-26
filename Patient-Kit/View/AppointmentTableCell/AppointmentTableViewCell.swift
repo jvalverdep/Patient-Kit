@@ -34,7 +34,7 @@ class AppointmentTableViewCell: UITableViewCell {
     }
 	
 	
-	func setDataWith(Appointment appointment: Appointment){
+	func setDataWith(){
 		doctorNameLabel.text = "DR Jose Barrientos"
 		appointmentDateLabel.text = "10/02/2018"
 		appointmentScheduleLabel.text = "11:00 - 13:00"

@@ -91,7 +91,7 @@ extension MyAppointmentsViewController: UITableViewDataSource{
 		let cell = tableView.dequeueReusableCell(withIdentifier: "AppointmentTableViewCell") as! AppointmentTableViewCell
 		
 		
-		cell.setDataWith(Appointment: Appointment())
+		cell.setDataWith()
 		
 		return cell
 	}

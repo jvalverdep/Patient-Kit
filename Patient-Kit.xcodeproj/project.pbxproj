@@ -49,6 +49,9 @@
 		F4DCC0AE20B3C362006259CC /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCC0AD20B3C362006259CC /* Appointment.swift */; };
 		F4DCC0B320B3DAD9006259CC /* AppointmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCC0B220B3DAD9006259CC /* AppointmentDetailViewController.swift */; };
 		F4DCC0B520B43FE3006259CC /* CreateAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCC0B420B43FE3006259CC /* CreateAppointmentViewController.swift */; };
+		F4DFA51320B90D51000C73E7 /* HealthUpcAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFA51220B90D51000C73E7 /* HealthUpcAPI.swift */; };
+		F4DFA51520B90F78000C73E7 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFA51420B90F78000C73E7 /* Patient.swift */; };
+		F4DFA51720B90FF5000C73E7 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFA51620B90FF5000C73E7 /* Doctor.swift */; };
 		F4E613C520B0667A005A738F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C420B0667A005A738F /* Alert.swift */; };
 		F4E613C720B06689005A738F /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C620B06689005A738F /* Notification.swift */; };
 /* End PBXBuildFile section */
@@ -113,6 +116,9 @@
 		F4DCC0AD20B3C362006259CC /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		F4DCC0B220B3DAD9006259CC /* AppointmentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDetailViewController.swift; sourceTree = "<group>"; };
 		F4DCC0B420B43FE3006259CC /* CreateAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAppointmentViewController.swift; sourceTree = "<group>"; };
+		F4DFA51220B90D51000C73E7 /* HealthUpcAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthUpcAPI.swift; sourceTree = "<group>"; };
+		F4DFA51420B90F78000C73E7 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		F4DFA51620B90FF5000C73E7 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 		F4E613C420B0667A005A738F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		F4E613C620B06689005A738F /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		FCDC8AF28C21F104A29A3A57 /* Pods-Patient-Kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-Kit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 		9100507D20AA0D9B008AB1DC /* Patient-Kit */ = {
 			isa = PBXGroup;
 			children = (
+				F4DFA51120B90A77000C73E7 /* Network */,
 				F4DCC08320B3BF82006259CC /* Resources */,
 				F430372320B071B6002967B3 /* View */,
 				F4E613C320B0666C005A738F /* Model */,
@@ -330,12 +337,22 @@
 			path = Poppins;
 			sourceTree = "<group>";
 		};
+		F4DFA51120B90A77000C73E7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFA51220B90D51000C73E7 /* HealthUpcAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F4E613C320B0666C005A738F /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				F4E613C420B0667A005A738F /* Alert.swift */,
 				F4E613C620B06689005A738F /* Notification.swift */,
 				F4DCC0AD20B3C362006259CC /* Appointment.swift */,
+				F4DFA51420B90F78000C73E7 /* Patient.swift */,
+				F4DFA51620B90FF5000C73E7 /* Doctor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -527,11 +544,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CVCalendar/CVCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CVCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -580,13 +601,16 @@
 				F4DCC07D20B3BC52006259CC /* MyAppointmentsViewController.swift in Sources */,
 				F4DCC0AE20B3C362006259CC /* Appointment.swift in Sources */,
 				910050B320AA1A50008AB1DC /* CreateAccountViewController.swift in Sources */,
+				F4DFA51720B90FF5000C73E7 /* Doctor.swift in Sources */,
 				910050A920AA0F3C008AB1DC /* LoginViewController.swift in Sources */,
 				F4DCC0B320B3DAD9006259CC /* AppointmentDetailViewController.swift in Sources */,
 				910050B120AA1610008AB1DC /* AppColor.swift in Sources */,
+				F4DFA51320B90D51000C73E7 /* HealthUpcAPI.swift in Sources */,
 				9100508720AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld in Sources */,
 				F4E613C720B06689005A738F /* Notification.swift in Sources */,
 				9100507F20AA0D9B008AB1DC /* AppDelegate.swift in Sources */,
 				910050AE20AA143C008AB1DC /* Gradient.swift in Sources */,
+				F4DFA51520B90F78000C73E7 /* Patient.swift in Sources */,
 				F4DCC0B520B43FE3006259CC /* CreateAppointmentViewController.swift in Sources */,
 				F4DCC08120B3BDA4006259CC /* AppointmentTableViewCell.swift in Sources */,
 			);
