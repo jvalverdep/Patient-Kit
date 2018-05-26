@@ -16,31 +16,27 @@ class Appointment{
 	var height: Double
 	var weight: Double
 	var glucoseTest: Double
-	var scheduleTest: Double
 	var scheduled: Date
 	var notes: String
 	
-	init(patientId: Int,doctorId: Int,height: Double,weight: Double,glucoseTest: Double,scheduleTest: Double,scheduled: String,notes: String) {
+	init(patientId: Int,doctorId: Int,height: Double,weight: Double,glucoseTest: Double,scheduled: String,notes: String) {
 		self.patientId = patientId
 		self.doctorId = doctorId
 		self.height = height
-		self.weight = weight
 		self.glucoseTest = glucoseTest
-		self.scheduleTest = scheduleTest
-		//TODO
-		self.scheduled = Date()
+		self.weight = weight
 		self.notes = notes
+		self.scheduled = UtilDates.getDate(stringDate: scheduled)!
 	}
 	
 	public static func from(jsonAppointment: JSON) -> Appointment {
-		return Appointment(patientId: jsonAppointment[""].intValue,
-									 doctorId: jsonAppointment[""].intValue,
-									 height: jsonAppointment[""].doubleValue,
-									 weight: jsonAppointment[""].doubleValue,
-									 glucoseTest: jsonAppointment[""].doubleValue,
-									 scheduleTest: jsonAppointment[""].doubleValue,
-									 scheduled: jsonAppointment[""].stringValue,
-									 notes: jsonAppointment[""].stringValue)
+		return Appointment(patientId: jsonAppointment["patient_id"].intValue,
+									 doctorId: jsonAppointment["doctor_id"].intValue,
+									 height: jsonAppointment["height"].doubleValue,
+									 weight: jsonAppointment["weight"].doubleValue,
+									 glucoseTest: jsonAppointment["glucotest"].doubleValue,
+									 scheduled: jsonAppointment["scheduled"].stringValue,
+									 notes: jsonAppointment["notes"].stringValue)
 	}
 	
 	public static func from(jsonAppointments: [JSON]) -> [Appointment] {

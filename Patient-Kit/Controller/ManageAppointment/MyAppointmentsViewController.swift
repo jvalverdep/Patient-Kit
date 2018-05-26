@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class MyAppointmentsViewController: UIViewController {
 
-	
 	@IBOutlet weak var appointmentsTableView: UITableView!
 	
 	var appointments = [Appointment]()
@@ -18,10 +19,9 @@ class MyAppointmentsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        appointmentsTableView.register(UINib(nibName: "AppointmentTableViewCell", bundle: nil), forCellReuseIdentifier: "AppointmentTableViewCell")
-			
+      appointmentsTableView.register(UINib(nibName: "AppointmentTableViewCell", bundle: nil), forCellReuseIdentifier: "AppointmentTableViewCell")
 			self.navigationController?.navigationBar.tintColor = UIColor.white;
-			
+			getAppointments()
     }
 
 	
@@ -39,23 +39,32 @@ class MyAppointmentsViewController: UIViewController {
 		self.navigationController?.navigationBar.barTintColor = AppColor.darkPurple
 	}
 	
-	
 	@IBAction func addApointmentAction(_ sender: Any) {
 		
-		
 	}
-	
 	
 	override func performSegue(withIdentifier identifier: String, sender: Any?) {
 		if identifier == "goToDetail"{
 			if let appointmentDetailVC = storyboard?.instantiateViewController(withIdentifier: "appointment_detail") as? AppointmentDetailViewController{
-
 				self.navigationController?.pushViewController(appointmentDetailVC, animated: true)
 			}
 		}
 	}
 	
-	
+	func getAppointments() {
+		Alamofire.request(HealthUpcAPI.getAppointments, method: .get, parameters: nil).responseJSON(completionHandler: { response in
+			switch response.result {
+			case .success(let value):
+				let json = JSON(value)
+				if let appointments = json["appointments"].array{
+					self.appointments = Appointment.from(jsonAppointments: appointments)
+					self.appointmentsTableView.reloadData()
+				}
+			case .failure(let error):
+				print(error)
+			}
+		})
+	}
 }
 
 
@@ -63,7 +72,7 @@ class MyAppointmentsViewController: UIViewController {
 extension MyAppointmentsViewController: UITableViewDelegate{
 	
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
-		return 100
+		return 65
 	}
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
@@ -79,7 +88,7 @@ extension MyAppointmentsViewController: UITableViewDelegate{
 extension MyAppointmentsViewController: UITableViewDataSource{
 	
 	func numberOfSections(in tableView: UITableView) -> Int {
-		return 15
+		return appointments.count
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -91,7 +100,7 @@ extension MyAppointmentsViewController: UITableViewDataSource{
 		let cell = tableView.dequeueReusableCell(withIdentifier: "AppointmentTableViewCell") as! AppointmentTableViewCell
 		
 		
-		cell.setDataWith()
+		cell.setDataWith(appointment: appointments[indexPath.section])
 		
 		return cell
 	}

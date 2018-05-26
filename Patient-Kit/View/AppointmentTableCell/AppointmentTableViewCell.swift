@@ -34,10 +34,11 @@ class AppointmentTableViewCell: UITableViewCell {
     }
 	
 	
-	func setDataWith(){
-		doctorNameLabel.text = "DR Jose Barrientos"
-		appointmentDateLabel.text = "10/02/2018"
-		appointmentScheduleLabel.text = "11:00 - 13:00"
+	func setDataWith(appointment: Appointment){
+		
+		doctorNameLabel.text = "\(appointment.doctorId)"
+		appointmentDateLabel.text = "\(UtilDates.spanishFormat(date: appointment.scheduled))"
+		appointmentScheduleLabel.text = "\(UtilDates.getHourMinutes(appointment.scheduled))"
 		doctorSpecialtyLabel.text = "Endocrinología"
 	}
 	
