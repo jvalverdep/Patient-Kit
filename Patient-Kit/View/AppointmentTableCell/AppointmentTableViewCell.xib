@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,38 +29,38 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U8i-HC-W08">
-                        <rect key="frame" x="0.0" y="3" width="1" height="75.5"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <rect key="frame" x="0.0" y="8" width="2" height="65.5"/>
+                        <color key="backgroundColor" red="0.50980392156862742" green="0.62745098039215685" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="1" id="Nbk-ut-yJg"/>
+                            <constraint firstAttribute="width" constant="2" id="Nbk-ut-yJg"/>
                         </constraints>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9M7-1l-Coe">
-                        <rect key="frame" x="11" y="10" width="330" height="61.5"/>
+                        <rect key="frame" x="12" y="10" width="329" height="61.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr: Jose Barrientos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQm-2B-Llg">
-                                <rect key="frame" x="0.0" y="0.0" width="330" height="41.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="329" height="41.5"/>
                                 <fontDescription key="fontDescription" name="Poppins-ExtraBold" family="Poppins" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="e7Z-Ql-Npf">
-                                <rect key="frame" x="0.0" y="41.5" width="330" height="20"/>
+                                <rect key="frame" x="0.0" y="41.5" width="329" height="20"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="10/02/2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TGo-qV-Lvg">
-                                        <rect key="frame" x="0.0" y="0.0" width="110" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="109.5" height="20"/>
                                         <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="11:00 - 13:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eQg-EN-rvP">
-                                        <rect key="frame" x="110" y="0.0" width="110" height="20"/>
+                                        <rect key="frame" x="109.5" y="0.0" width="110" height="20"/>
                                         <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endocrinologia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mz6-hU-Z12">
-                                        <rect key="frame" x="220" y="0.0" width="110" height="20"/>
+                                        <rect key="frame" x="219.5" y="0.0" width="109.5" height="20"/>
                                         <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -78,14 +79,14 @@
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="U8i-HC-W08" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="0bf-S7-3QC"/>
+                    <constraint firstItem="U8i-HC-W08" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dfe-tb-szm"/>
                     <constraint firstAttribute="trailing" secondItem="jb6-OB-a70" secondAttribute="trailing" constant="10" id="E30-AZ-rHm"/>
                     <constraint firstItem="U8i-HC-W08" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Jr5-52-Bs1"/>
                     <constraint firstItem="jb6-OB-a70" firstAttribute="leading" secondItem="9M7-1l-Coe" secondAttribute="trailing" constant="10" id="LkA-JD-BsC"/>
+                    <constraint firstItem="U8i-HC-W08" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="VV8-We-f32"/>
                     <constraint firstItem="9M7-1l-Coe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ch5-zO-HGf"/>
                     <constraint firstItem="9M7-1l-Coe" firstAttribute="leading" secondItem="U8i-HC-W08" secondAttribute="trailing" constant="10" id="f8T-0U-Ls5"/>
                     <constraint firstItem="jb6-OB-a70" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fU8-oQ-Zj3"/>
-                    <constraint firstAttribute="bottom" secondItem="U8i-HC-W08" secondAttribute="bottom" constant="3" id="ooq-dz-NDD"/>
                     <constraint firstAttribute="bottom" secondItem="9M7-1l-Coe" secondAttribute="bottom" constant="10" id="wJK-PM-Evc"/>
                 </constraints>
             </tableViewCellContentView>

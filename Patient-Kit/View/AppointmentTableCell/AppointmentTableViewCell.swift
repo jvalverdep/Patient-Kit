@@ -27,6 +27,7 @@ class AppointmentTableViewCell: UITableViewCell {
 			appointmentDateLabel.textColor = AppColor.darkGray
 			appointmentScheduleLabel.textColor = AppColor.darkGray
 			doctorSpecialtyLabel.textColor = AppColor.darkGray
+			self.backgroundColor = AppColor.smoke
     }
 	
     override func setSelected(_ selected: Bool, animated: Bool) {
