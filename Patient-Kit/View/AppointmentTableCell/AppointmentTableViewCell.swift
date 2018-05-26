@@ -12,10 +12,9 @@ class AppointmentTableViewCell: UITableViewCell {
 
 	
 	@IBOutlet weak var leftDecoratorView: UIView!
-	@IBOutlet weak var doctorNameLabel: UILabel!
+	@IBOutlet weak var reasonLabel: UILabel!
 	@IBOutlet weak var appointmentDateLabel: UILabel!
 	@IBOutlet weak var appointmentScheduleLabel: UILabel!
-	@IBOutlet weak var doctorSpecialtyLabel: UILabel!
 	@IBOutlet weak var doctorPictureImage: UIImageView!
 	
 	
@@ -23,11 +22,10 @@ class AppointmentTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 			leftDecoratorView.backgroundColor = AppColor.darkPurple
-			doctorNameLabel.textColor = AppColor.black
+			reasonLabel.textColor = AppColor.black
 			appointmentDateLabel.textColor = AppColor.darkGray
 			appointmentScheduleLabel.textColor = AppColor.darkGray
-			doctorSpecialtyLabel.textColor = AppColor.darkGray
-			self.backgroundColor = AppColor.smoke
+//            self.backgroundColor = AppColor.smoke
     }
 	
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -37,10 +35,10 @@ class AppointmentTableViewCell: UITableViewCell {
 	
 	func setDataWith(appointment: Appointment){
 		
-		doctorNameLabel.text = "\(appointment.doctorId)"
+//        doctorNameLabel.text = "Dr. \(appointment.doctor.firstName) \(appointment.doctor.lastName)"
+        reasonLabel.text = "\(appointment.reason)"
 		appointmentDateLabel.text = "\(UtilDates.spanishFormat(date: appointment.scheduled))"
 		appointmentScheduleLabel.text = "\(UtilDates.getHourMinutes(appointment.scheduled))"
-		doctorSpecialtyLabel.text = "Endocrinología"
 	}
 	
 }

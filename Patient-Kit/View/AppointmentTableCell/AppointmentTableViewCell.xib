@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,41 +35,7 @@
                             <constraint firstAttribute="width" constant="2" id="Nbk-ut-yJg"/>
                         </constraints>
                     </view>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9M7-1l-Coe">
-                        <rect key="frame" x="12" y="10" width="329" height="61.5"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr: Jose Barrientos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQm-2B-Llg">
-                                <rect key="frame" x="0.0" y="0.0" width="329" height="41.5"/>
-                                <fontDescription key="fontDescription" name="Poppins-ExtraBold" family="Poppins" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="e7Z-Ql-Npf">
-                                <rect key="frame" x="0.0" y="41.5" width="329" height="20"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="10/02/2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TGo-qV-Lvg">
-                                        <rect key="frame" x="0.0" y="0.0" width="109.5" height="20"/>
-                                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="11:00 - 13:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eQg-EN-rvP">
-                                        <rect key="frame" x="109.5" y="0.0" width="110" height="20"/>
-                                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endocrinologia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mz6-hU-Z12">
-                                        <rect key="frame" x="219.5" y="0.0" width="109.5" height="20"/>
-                                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                    </stackView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jb6-OB-a70">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_doctor_profile" translatesAutoresizingMaskIntoConstraints="NO" id="jb6-OB-a70">
                         <rect key="frame" x="351" y="21.5" width="40" height="40"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -77,29 +43,65 @@
                             <constraint firstAttribute="width" constant="40" id="Qic-o0-CSm"/>
                         </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZW-Ht-F7k">
+                        <rect key="frame" x="10" y="8" width="333" height="66"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr: Jose Barrientos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQm-2B-Llg">
+                                <rect key="frame" x="8" y="0.0" width="146.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Poppins-ExtraBold" family="Poppins" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="11:00 - 13:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eQg-EN-rvP">
+                                <rect key="frame" x="92" y="29" width="72.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="10/02/2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TGo-qV-Lvg">
+                                <rect key="frame" x="8" y="29" width="68" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eQg-EN-rvP" firstAttribute="leading" secondItem="TGo-qV-Lvg" secondAttribute="trailing" constant="16" id="8XD-ld-uRk"/>
+                            <constraint firstItem="eQg-EN-rvP" firstAttribute="top" secondItem="FQm-2B-Llg" secondAttribute="bottom" constant="8" id="G7P-Yf-XFu"/>
+                            <constraint firstItem="FQm-2B-Llg" firstAttribute="top" secondItem="nZW-Ht-F7k" secondAttribute="top" id="PE3-Bk-PlE"/>
+                            <constraint firstItem="FQm-2B-Llg" firstAttribute="leading" secondItem="nZW-Ht-F7k" secondAttribute="leading" constant="8" id="WHs-ce-E5U"/>
+                            <constraint firstItem="TGo-qV-Lvg" firstAttribute="top" secondItem="FQm-2B-Llg" secondAttribute="bottom" constant="8" id="eVu-2d-ast"/>
+                            <constraint firstItem="TGo-qV-Lvg" firstAttribute="leading" secondItem="nZW-Ht-F7k" secondAttribute="leading" constant="8" id="iTW-AW-Pzx"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="eQg-EN-rvP" secondAttribute="trailing" constant="168.5" id="uSU-0N-UPb"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="FQm-2B-Llg" secondAttribute="trailing" constant="178.5" id="wsk-pK-S4K"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="U8i-HC-W08" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dfe-tb-szm"/>
                     <constraint firstAttribute="trailing" secondItem="jb6-OB-a70" secondAttribute="trailing" constant="10" id="E30-AZ-rHm"/>
                     <constraint firstItem="U8i-HC-W08" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Jr5-52-Bs1"/>
-                    <constraint firstItem="jb6-OB-a70" firstAttribute="leading" secondItem="9M7-1l-Coe" secondAttribute="trailing" constant="10" id="LkA-JD-BsC"/>
+                    <constraint firstItem="jb6-OB-a70" firstAttribute="leading" secondItem="nZW-Ht-F7k" secondAttribute="trailing" constant="8" id="N9V-sp-wWL"/>
                     <constraint firstItem="U8i-HC-W08" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="VV8-We-f32"/>
-                    <constraint firstItem="9M7-1l-Coe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ch5-zO-HGf"/>
-                    <constraint firstItem="9M7-1l-Coe" firstAttribute="leading" secondItem="U8i-HC-W08" secondAttribute="trailing" constant="10" id="f8T-0U-Ls5"/>
                     <constraint firstItem="jb6-OB-a70" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fU8-oQ-Zj3"/>
-                    <constraint firstAttribute="bottom" secondItem="9M7-1l-Coe" secondAttribute="bottom" constant="10" id="wJK-PM-Evc"/>
+                    <constraint firstAttribute="bottom" secondItem="nZW-Ht-F7k" secondAttribute="bottom" constant="7.5" id="mm0-Ex-3vU"/>
+                    <constraint firstItem="nZW-Ht-F7k" firstAttribute="leading" secondItem="U8i-HC-W08" secondAttribute="trailing" constant="8" id="yli-W6-Z3A"/>
+                    <constraint firstItem="nZW-Ht-F7k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="z2y-7N-sZL"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="appointmentDateLabel" destination="TGo-qV-Lvg" id="nBK-g6-MEO"/>
                 <outlet property="appointmentScheduleLabel" destination="eQg-EN-rvP" id="Mge-Mc-zv7"/>
-                <outlet property="doctorNameLabel" destination="FQm-2B-Llg" id="HJ8-XG-MTn"/>
                 <outlet property="doctorPictureImage" destination="jb6-OB-a70" id="1SE-He-MSG"/>
-                <outlet property="doctorSpecialtyLabel" destination="mz6-hU-Z12" id="br7-Oz-Pqr"/>
                 <outlet property="leftDecoratorView" destination="U8i-HC-W08" id="KJf-Q6-xcF"/>
+                <outlet property="reasonLabel" destination="FQm-2B-Llg" id="HJ8-XG-MTn"/>
             </connections>
             <point key="canvasLocation" x="141.5" y="73"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="img_doctor_profile" width="112" height="112"/>
+    </resources>
 </document>

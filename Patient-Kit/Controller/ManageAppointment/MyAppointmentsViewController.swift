@@ -21,7 +21,7 @@ class MyAppointmentsViewController: UIViewController {
 
       appointmentsTableView.register(UINib(nibName: "AppointmentTableViewCell", bundle: nil), forCellReuseIdentifier: "AppointmentTableViewCell")
 			self.navigationController?.navigationBar.tintColor = UIColor.white;
-			appointmentsTableView.separatorStyle = .none
+			appointmentsTableView.separatorStyle = .singleLine
 			getAppointments()
     }
 
@@ -53,7 +53,7 @@ class MyAppointmentsViewController: UIViewController {
 	}
 	
 	func getAppointments() {
-		Alamofire.request(HealthUpcAPI.getAppointments, method: .get, parameters: nil).responseJSON(completionHandler: { response in
+		Alamofire.request(HealthUpcAPI.getAppointments + "/patients/1", method: .get, parameters: nil).responseJSON(completionHandler: { response in
 			switch response.result {
 			case .success(let value):
 				let json = JSON(value)
