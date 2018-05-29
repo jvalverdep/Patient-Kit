@@ -11,16 +11,27 @@ import UIKit
 class AppointmentDetailViewController: UIViewController {
 
 	
-	@IBOutlet weak var cancelAppointmentButton: UIButton!
+    @IBOutlet weak var doctorImageView: UIImageView!
+    @IBOutlet weak var doctorNameLabel: UILabel!
+    @IBOutlet weak var doctorProfessionLabel: UILabel!
+    @IBOutlet weak var scheduledDateLabel: UILabel!
+    @IBOutlet weak var scheduledTimeLabel: UILabel!
+    @IBOutlet weak var cancelAppointmentButton: UIButton!
 	
+    var appointment: Appointment? {
+        didSet {
+            
+        }
+    }
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        cancelAppointmentButton.backgroundColor = AppColor.darkPurple
-			cancelAppointmentButton.layer.cornerRadius = cancelAppointmentButton.bounds.height / 2
+        cancelAppointmentButton.backgroundColor = UIColor.red
+        cancelAppointmentButton.layer.cornerRadius = cancelAppointmentButton.bounds.height / 2
 			
-			self.view.backgroundColor = AppColor.smoke
+        self.view.backgroundColor = AppColor.smoke
+        updateValues()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,13 +49,17 @@ class AppointmentDetailViewController: UIViewController {
 		label.font = UIFont(name: "Poppins-SemiBold", size: 15)
 		label.textAlignment = .center
 		label.textColor = .white
-		label.text = "Appointments Detail"
+		label.text = "Appointment's Detail"
 		self.navigationItem.titleView = label
 	}
-	
-	
-
-	
-	
-
+    
+    func updateValues() {
+        if let currentAppointment = appointment {
+            doctorNameLabel.text = "Dr." + currentAppointment.doctor.firstName + currentAppointment.doctor.lastName
+            doctorProfessionLabel.text = currentAppointment.doctor.profession
+            scheduledDateLabel.text = "\(UtilDates.spanishFormat(date: currentAppointment.scheduled))"
+            scheduledTimeLabel.text = "\(UtilDates.getHourMinutes(currentAppointment.scheduled))"
+        }
+    }
+    
 }

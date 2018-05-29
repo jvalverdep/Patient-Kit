@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 class MyAppointmentsViewController: UIViewController {
-
+    var currentIndex = 0
 	@IBOutlet weak var appointmentsTableView: UITableView!
 	
 	var appointments = [Appointment]()
@@ -44,13 +44,14 @@ class MyAppointmentsViewController: UIViewController {
 		
 	}
 	
-	override func performSegue(withIdentifier identifier: String, sender: Any?) {
-		if identifier == "goToDetail"{
-			if let appointmentDetailVC = storyboard?.instantiateViewController(withIdentifier: "appointment_detail") as? AppointmentDetailViewController{
-				self.navigationController?.pushViewController(appointmentDetailVC, animated: true)
-			}
-		}
-	}
+//    override func performSegue(withIdentifier identifier: String, sender: Any?) {
+//        if identifier == "goToDetail"{
+//            if let appointmentDetailVC = storyboard?.instantiateViewController(withIdentifier: "appointment_detail") as? AppointmentDetailViewController{
+//                self.navigationController?.pushViewController(appointmentDetailVC, animated: true)
+//                appointmentDetailVC.appointment = appointments[currentIndex]
+//            }
+//        }
+//    }
 	
 	func getAppointments() {
 		Alamofire.request(HealthUpcAPI.getAppointments + "/patients/1", method: .get, parameters: nil).responseJSON(completionHandler: { response in
@@ -77,11 +78,21 @@ extension MyAppointmentsViewController: UITableViewDelegate{
 	}
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-		
-		performSegue(withIdentifier: "goToDetail", sender: nil)
+		currentIndex = indexPath.row
+		self.performSegue(withIdentifier: "goToDetail", sender: self)
 		
 		
 	}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToDetail" {
+            let destination = segue.destination as!AppointmentDetailViewController
+//            destination.doctorNameLabel = "Dr. " + appointments[currentIndex].doctor.firstName + appointments[currentIndex].doctor.lastName
+//            destination.doctorProfessionLabel =
+//            destination.scheduledDateLabel
+//            destination.scheduledTimeLabel
+            destination.appointment = appointments[currentIndex]
+        }
+    }
 	
 }
 
@@ -89,19 +100,21 @@ extension MyAppointmentsViewController: UITableViewDelegate{
 extension MyAppointmentsViewController: UITableViewDataSource{
 	
 	func numberOfSections(in tableView: UITableView) -> Int {
-		return appointments.count
+		return 1
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 1
+		return appointments.count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "AppointmentTableViewCell") as! AppointmentTableViewCell
 		
+        let appointment = appointments[indexPath.row]
 		cell.selectionStyle = .none
-		cell.setDataWith(appointment: appointments[indexPath.section])
+//        cell.updateValue(from: appointments[indexPath.section])
+        cell.updateValue(from: appointment)
 		
 		return cell
 	}

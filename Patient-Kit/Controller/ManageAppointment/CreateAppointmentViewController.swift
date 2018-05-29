@@ -16,6 +16,7 @@ class CreateAppointmentViewController: UIViewController {
     @IBOutlet weak var calendarView: CVCalendarView!
     @IBOutlet weak var availableAppointmentsTableView: UITableView!
     
+    var availableAppointments: [NSObject] = []
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +68,7 @@ extension CreateAppointmentViewController: CVCalendarViewDelegate{
     }
 
     func presentedDateUpdated(_ date: CVDate) {
-        print(date.convertedDate())
+        print(date.convertedDate()!)
         availableAppointmentsTableView.reloadData()
     }
 
@@ -93,15 +94,18 @@ extension CreateAppointmentViewController: UITableViewDelegate{
 }
 
 extension CreateAppointmentViewController: UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let randomNum:UInt32 = arc4random_uniform(8)
-        return Int(randomNum)
+//        let randomNum:UInt32 = arc4random_uniform(8)
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell") as! ScheduleTableViewCell
 			
-			cell.selectionStyle = .none
+        cell.selectionStyle = .none
 			
         return cell
     }

@@ -10,8 +10,8 @@ import Foundation
 
 
 class HealthUpcAPI {
-    private static let baseUrl = "http://localhost:8080"
-//    private static let baseUrl = "http://54.174.188.181:8080"
+//    private static let baseUrl = "http://localhost:8080"
+    private static let baseUrl = "http://54.92.239.141:8080"
 	
 	public static let getAppointments = "\(baseUrl)"
 //	public static let getAppointments = "\(baseUrl)/patients/%@"

@@ -33,7 +33,7 @@ class AppointmentTableViewCell: UITableViewCell {
     }
 	
 	
-	func setDataWith(appointment: Appointment){
+	func updateValue(from appointment: Appointment){
 		
 //        doctorNameLabel.text = "Dr. \(appointment.doctor.firstName) \(appointment.doctor.lastName)"
         reasonLabel.text = "\(appointment.reason)"
